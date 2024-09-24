@@ -12,3 +12,4 @@ adminer.php
 /mariadb_data
 adminer_router.php
 server/moodledata/cache/core_component.php
+custom_php.ini

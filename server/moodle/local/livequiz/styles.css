@@ -1,0 +1,37 @@
+
+
+.Modal_div {
+    width: 80%;
+    height: 80%;
+    color: grey;
+    position: fixed; /* Fix the position relative to the viewport */
+    top: 50%; /* Position in the middle */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+    overflow: auto;
+    background: gainsboro;
+    display: flex; /* Gør div'en til en flex container */
+    flex-direction: column; /* Placerer elementerne vertikalt som en kolonne */
+    justify-content: center; /* Centrerer elementerne vertikalt */
+    align-items: center; /* Centrerer elementerne horisontalt */
+}
+
+.answer_div{
+
+}
+
+.answer_input{
+    background: white;
+    width: 10%;
+    height: 5%;
+    background: slategrey;
+    border: black;
+}
+
+.newQuestionInput{
+    background: white;
+    width: 10%;
+    height: 5%;
+    background: slategrey;
+    border: black;
+}

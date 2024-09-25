@@ -1,5 +1,4 @@
 
-
 .Modal_div {
     width: 80%;
     height: 80%;
@@ -9,29 +8,49 @@
     left: 50%;
     transform: translate(-50%, -50%); /* Center the element */
     overflow: auto;
-    background: gainsboro;
+    background: gainsboro; /*Funny collor  name*/
     display: flex; /* Gør div'en til en flex container */
     flex-direction: column; /* Placerer elementerne vertikalt som en kolonne */
     justify-content: center; /* Centrerer elementerne vertikalt */
     align-items: center; /* Centrerer elementerne horisontalt */
+    border: 3px solid black; /* Thicker border */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+
 }
 
-.answer_div{
-
+.answer_div {
+    max-height: 50%;
+    max-width: 60%;
+    width: 60%;
+    height: 50%;
 }
 
-.answer_input{
+.answer_input {
     background: white;
-    width: 10%;
-    height: 5%;
-    background: slategrey;
-    border: black;
+    width: 40%;
+    height: 15%;
+
+    border: 2px solid black; /* Thicker border */
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    font-size: large;
+    text-align: center;
+    max-height: 15%;
+    max-width: 40%;
+    margin-left: 8%;
+    margin-top: 10%;
+    margin-right: 8%;
 }
 
-.newQuestionInput{
+.newQuestionInput {
     background: white;
-    width: 10%;
-    height: 5%;
-    background: slategrey;
-    border: black;
+    width: 20%;
+    height: 10%;
+    border: 2px solid black; /* Thicker border */
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    font-size: large;
+    text-align: center;
+
 }

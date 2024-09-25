@@ -14,7 +14,7 @@ define(['jquery'], function ($) {
                     console.log(button);
 
                     // Attach event listener correctly
-                    button.addEventListener('click', function() {
+                    button.addEventListener('click', () => {
                         let newButton = document.createElement('button');
 
                         let div = document.createElement("div");
@@ -22,42 +22,73 @@ define(['jquery'], function ($) {
                         // Den skal centres og overlappe på siden. Farve grå.
                         // Her smider du så alle de ting du gerne vil have.
 
-                        let newQuestionInput = document.createElement('input');
+                        let divToTimeLimit = document.createElement("div");
+                        divToTimeLimit.className = "time_limit_div";
+
+                        let checkToEnforceTimer = document.createElement('INPUT');
+                        checkToEnforceTimer.setAttribute("type", "checkbox");
+
+                        let inputFieldForTimeLimit = document.createElement('input');
+                        inputFieldForTimeLimit.placeholder = "0";
+                        inputFieldForTimeLimit.type = 'number';
+                        inputFieldForTimeLimit.setAttribute('disabled', 'disabled');
+
+                        divToTimeLimit.appendChild(checkToEnforceTimer);
+                        divToTimeLimit.appendChild(inputFieldForTimeLimit);
+
+                        checkToEnforceTimer.addEventListener('checked', () => {
+                            inputFieldForTimeLimit.removeAttr('disabled');
+                        });
+                        // if (checkToEnforceTimer.checked) {
+                        //     inputFieldForTimeLimit.removeAttr('disabled');
+                        // }
+
+                        let newQuestionInput = document.createElement('textarea');
                         newQuestionInput.placeholder = "Enter question";
-                        newQuestionInput.className="newQuestionInput";
+                        newQuestionInput.className = "newQuestionInput";
 
                         let newQuestionButton = document.createElement('button');
                         newQuestionButton.textContent = "Add Answer";
+                        newQuestionButton.className = "add_answer";
 
-                        let divAnswers = document.createElement("div");
-                        divAnswers.className = "answer_div";
-                        newQuestionButton.addEventListener('click', function() {
-                            let newQuestionAnswer = document.createElement('button');
-                            console.log("Her");
-                            newQuestionAnswer.className("answer_input");
-                            console.log("Her");
+                        let divListAnswers = document.createElement("div");
+                        divListAnswers.className = "answer_div";
+
+                        newQuestionButton.addEventListener('click', () => {
+                            let newAnswerDiv = document.createElement('div');
+                            newAnswerDiv.className = "newAnswerDiv";
+
+                            let newQuestionAnswer = document.createElement('input');
+                            newQuestionAnswer.className = "answer_input";
                             newQuestionAnswer.placeholder = "Enter answer";
-                            // let checkBoxToAnswer = documentElement.createElement('select');
-                            newQuestionAnswer.addEventListener('dblClick', function() {
-                                newQuestionAnswer.contentEditable = true;
-                                newQuestionAnswer.focus();
-                            });
 
-                            newQuestionAnswer.addEventListener('blur', function() {
-                                newQuestionAnswer.contentEditable = false;
-                            });
-                            newQuestionButton.appendChild(newQuestionAnswer);
-                            divAnswers.appendChild(newQuestionAnswer);
+                            let checkBoxToAnswer = document.createElement('INPUT');
+                            checkBoxToAnswer.setAttribute("type", "checkbox");
+
+                            let deleteAnswer = document.createElement('button');
+                            deleteAnswer.textContent = "Delete";
+
+                            newQuestionAnswer.appendChild(deleteAnswer);
+                            newAnswerDiv.appendChild(deleteAnswer);
+                            newAnswerDiv.appendChild(checkBoxToAnswer);
+                            // newQuestionAnswer.addEventListener('dblclick', function() {
+                            //     newQuestionAnswer.contentEditable = true;
+                            //     newQuestionAnswer.focus();
+                            // });
+                            //
+                            // newQuestionAnswer.addEventListener('blur', () => {
+                            //     newQuestionAnswer.contentEditable = false;
+                            // });
+                            divListAnswers.appendChild(newQuestionAnswer);
                         });
                         div.appendChild(newQuestionInput);
+                        div.appendChild(divToTimeLimit);
                         div.appendChild(newQuestionButton);
-                        div.appendChild(divAnswers);
+                        div.appendChild(divListAnswers);
                         /*
-                        Lav input field til text af spørgsmål
                         Lav file uploader
                         Lav en ny knap som laver andre knapper
                         Nye knapper skal have checkbox og delete knap
-                        Lav en checkbox som skal tjekkes før tekst kan indsættes i dens input field
                         Lav discard og save knap
                         Discard knap skal have et tjek før den afsluttes
                          */

@@ -17,8 +17,8 @@ define(['jquery'], function ($) {
                     button.addEventListener('click', () => {
                         let newButton = document.createElement('button');
 
-                        let div = document.createElement("div");
-                        div.className = "Modal_div";// Lav en styles.css stil til denne så den fylder 80% af skærmen hele skærmen.
+                        let modaldiv = document.createElement("div");
+                        modaldiv.className = "Modal_div";// Lav en styles.css stil til denne så den fylder 80% af skærmen hele skærmen.
                         // Den skal centres og overlappe på siden. Farve grå.
                         // Her smider du så alle de ting du gerne vil have.
 
@@ -31,17 +31,37 @@ define(['jquery'], function ($) {
                         let inputFieldForTimeLimit = document.createElement('input');
                         inputFieldForTimeLimit.placeholder = "0";
                         inputFieldForTimeLimit.type = 'number';
-                        inputFieldForTimeLimit.setAttribute('disabled', 'disabled');
+                        inputFieldForTimeLimit.setAttribute('disabled', 'true');
 
                         divToTimeLimit.appendChild(checkToEnforceTimer);
                         divToTimeLimit.appendChild(inputFieldForTimeLimit);
 
-                        checkToEnforceTimer.addEventListener('checked', () => {
-                            inputFieldForTimeLimit.removeAttr('disabled');
+                        checkToEnforceTimer.addEventListener('click', () => {
+                            if (checkToEnforceTimer.checked) {
+                                console.log("hello");
+                                inputFieldForTimeLimit.removeAttr('disabled');
+                            } else {
+                                console.log("hej");
+                                inputFieldForTimeLimit.setAttribute('disabled', 'true');
+                            }
                         });
-                        // if (checkToEnforceTimer.checked) {
-                        //     inputFieldForTimeLimit.removeAttr('disabled');
-                        // }
+
+                        let fileInput = document.createElement('input');
+                        fileInput.type = 'file';
+
+                        let filePicker = document.createElement('button');
+                        filePicker.addEventListener('click', () => {
+                            fileInput.click();
+                        });
+
+                        filePicker.addEventListener('click', () => {
+                            filePicker.click();
+                        });
+
+                        fileInput.addEventListener('change', () => {
+                            const selectedFile = fileInput.files[0];
+                            console.log(selectedFile);
+                        });
 
                         let newQuestionInput = document.createElement('textarea');
                         newQuestionInput.placeholder = "Enter question";
@@ -49,14 +69,14 @@ define(['jquery'], function ($) {
 
                         let newQuestionButton = document.createElement('button');
                         newQuestionButton.textContent = "Add Answer";
-                        newQuestionButton.className = "add_answer";
+                        newQuestionButton.className = "add_answer_button";
 
                         let divListAnswers = document.createElement("div");
                         divListAnswers.className = "answer_div";
 
                         newQuestionButton.addEventListener('click', () => {
-                            let newAnswerDiv = document.createElement('div');
-                            newAnswerDiv.className = "newAnswerDiv";
+                            let newAnswerContainer = document.createElement('div');
+                            newAnswerContainer.className = "newAnswerDiv";
 
                             let newQuestionAnswer = document.createElement('input');
                             newQuestionAnswer.className = "answer_input";
@@ -66,11 +86,11 @@ define(['jquery'], function ($) {
                             checkBoxToAnswer.setAttribute("type", "checkbox");
 
                             let deleteAnswer = document.createElement('button');
-                            deleteAnswer.textContent = "Delete";
+                            deleteAnswer.className = "deletedivbutton";
 
-                            newQuestionAnswer.appendChild(deleteAnswer);
-                            newAnswerDiv.appendChild(deleteAnswer);
-                            newAnswerDiv.appendChild(checkBoxToAnswer);
+                            newAnswerContainer.appendChild(newQuestionAnswer);
+                            newAnswerContainer.appendChild(deleteAnswer);
+                            newAnswerContainer.appendChild(checkBoxToAnswer);
                             // newQuestionAnswer.addEventListener('dblclick', function() {
                             //     newQuestionAnswer.contentEditable = true;
                             //     newQuestionAnswer.focus();
@@ -79,21 +99,28 @@ define(['jquery'], function ($) {
                             // newQuestionAnswer.addEventListener('blur', () => {
                             //     newQuestionAnswer.contentEditable = false;
                             // });
-                            divListAnswers.appendChild(newQuestionAnswer);
+                            divListAnswers.appendChild(newAnswerContainer);
                         });
-                        div.appendChild(newQuestionInput);
-                        div.appendChild(divToTimeLimit);
-                        div.appendChild(newQuestionButton);
-                        div.appendChild(divListAnswers);
+                        modaldiv.appendChild(fileInput);
+                        modaldiv.appendChild(filePicker);
+                        modaldiv.appendChild(newQuestionInput);
+                        modaldiv.appendChild(divToTimeLimit);
+                        modaldiv.appendChild(newQuestionButton);
+                        modaldiv.appendChild(divListAnswers);
                         /*
                         Lav file uploader
-                        Lav en ny knap som laver andre knapper
                         Nye knapper skal have checkbox og delete knap
                         Lav discard og save knap
                         Discard knap skal have et tjek før den afsluttes
                          */
 
-                        document.body.appendChild(div);
+                        let deletemodaldiv = document.createElement("div");
+                        deletemodaldiv.className = "deletedivbutton";
+                        deletemodaldiv.addEventListener('click', () => {
+                            modaldiv.remove();
+                        });
+                        modaldiv.appendChild(deletemodaldiv);
+                        document.body.appendChild(modaldiv);
                         // Append new button to the parent element
 
                     });

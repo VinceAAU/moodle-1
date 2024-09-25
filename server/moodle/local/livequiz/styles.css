@@ -24,24 +24,27 @@
     max-width: 60%;
     width: 60%;
     height: 50%;
+    padding-left: 5%;
 }
 
 .answer_input {
     background: white;
     width: 40%;
     height: 15%;
+    max-height: 15%;
+    max-width: 40%;
 
     border: 2px solid black; /* Thicker border */
     border-radius: 2px; /* Rounded corners */
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
     font-size: large;
     text-align: center;
-    max-height: 15%;
-    max-width: 40%;
-    margin-left: 8%;
-    margin-top: 10%;
+
+
+    margin-top: 8%;
     margin-right: 8%;
 }
+
 
 .newQuestionInput {
     background: white;
@@ -53,4 +56,14 @@
     font-size: large;
     text-align: center;
 
+}
+
+.deletedivbutton {
+    position: absolute; /* Absolute positioning relative to the nearest positioned ancestor */
+    top: 0; /* Align to the top of the container */
+    right: 0; /* Align to the right of the container */
+    background-color: red; /* Set the background color to red */
+    color: white; /* Optional: Set text color to white for contrast */
+    padding: 5px 10px; /* Add some padding */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
 }

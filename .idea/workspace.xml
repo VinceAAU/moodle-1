@@ -4,7 +4,723 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7e30d9c-4aec-4e75-98be-e84e4d6fcc00" name="Changes" comment="" />
+    <list default="true" id="e7e30d9c-4aec-4e75-98be-e84e4d6fcc00" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/server/moodle/local/livequiz/Status.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apache/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/server/apache/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apache/logs/httpd.pid" beforeDir="false" afterPath="$PROJECT_DIR$/server/apache/logs/httpd.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodle/local/livequiz/amd/build/quizcreator.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodle/local/livequiz/amd/build/quizcreator.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodle/local/livequiz/amd/src/quizcreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodle/local/livequiz/amd/src/quizcreator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodle/local/livequiz/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodle/local/livequiz/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/244-cache/2441a786f6c2776ea81889e590620f4baad9fdf8.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/244-cache/2441a786f6c2776ea81889e590620f4baad9fdf8.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/295-cache/2953c977d7bbe44b7aef5a26fa58c0eb68c722f9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/721-cache/72117509142fb880fef35c2f9da11ebafdea6ac9.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/7cd-cache/7cdafe36ef89872ec0f002428a83d123e8ed7885.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/a9a-cache/a9abf80e67e643e1eb1455aa1e17ca575a1933b8.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/a9a-cache/a9abf80e67e643e1eb1455aa1e17ca575a1933b8.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/ec2-cache/ec2419ffc20e7562511761019d5c8b1488538ceb.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/faa-cache/faa94afdae20c8af3942f3f9945a71b8916dccd0.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/faa-cache/faa94afdae20c8af3942f3f9945a71b8916dccd0.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/fd3-cache/fd372ad09c057fb5be8a324d81fbf602905ae0b8.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_config/fd3-cache/fd372ad09c057fb5be8a324d81fbf602905ae0b8.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_coursecattree/4d3-cache/4d32d94cd8ad17b4ceab534484a97ca08d6253d5.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_coursecattree/4d3-cache/4d32d94cd8ad17b4ceab534484a97ca08d6253d5.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_coursecontacts/2-1-cache/2-1887fb38f8943546cc19a64a817ae520.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_coursemodinfo/1-5-cache/1-56c0c8b4a8b982bf0038b21b7d60a62a.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_coursemodinfo/1-5-cache/1-56c0c8b4a8b982bf0038b21b7d60a62a.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_coursemodinfo/2-5-cache/2-56c0c8b4a8b982bf0038b21b7d60a62a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_databasemeta/3d0-cache/3d08abce0079b21439684de2e38ca4d7dbd7b01a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_databasemeta/acf-cache/acf128f079bb9f4ccb68bf8f81c275a0f017ba75.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_databasemeta/d95-cache/d95f0f45813a14c3fa5ea278a7120279a8aaab72.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_htmlpurifier/007-cache/0071cae89290b51dae36471d52424f68e6ada9a8.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_htmlpurifier/0d1-cache/0d1671aee820e3737b4b3deb614c04e7b18a6455.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_htmlpurifier/821-cache/8212d3ed8bb29c286ab6157eb1aac5a85ad9f01d.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_langmenu/lis-cache/list_1727194403-2c68d8e1f264cf374c37b26f1e12f320.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_observers/all-cache/all-a565a6884fda8545df45a23fb151f6f1.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_observers/dir-cache/dirroot-a565a6884fda8545df45a23fb151f6f1.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_add_htmlattributes_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_after_config_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_after_require_login_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_before_footer_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_before_http_headers_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_before_session_start_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_before_standard_html_head_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_before_standard_top_of_body_html_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_custom_chooser_footer_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_extend_course_classify_for_timeline_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_extend_navigation_frontpage_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_extend_navigation_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_extend_navigation_user_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_extend_navigation_user_settings_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_extend_settings_navigation_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_get_deprecated_icons_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_get_fontawesome_icon_map_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_override_webservice_execution_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_render_navbar_output_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_search_area_categories_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_standard_after_main_region_html_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_functions/deb-cache/deb5632e19202987ecf98a42640449de3df4cb8e_standard_footer_html_libphp-13382fe21d6e4b0145b4e21607c98797.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_manager/ins-cache/installed-b487575e85862e98471bee57087c2018.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_plugin_manager/ins-cache/installed-b487575e85862e98471bee57087c2018.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_postprocessedcss/boo-cache/boost_ltr-7a192ce5bd17f395b91063e63e1eda4f.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_postprocessedcss/boo-cache/boost_ltr-7a192ce5bd17f395b91063e63e1eda4f.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_roledefs/6-3-cache/6-332556931e2e974014d3c9c0f964a699.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_antivirus_clamav_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_assignfeedback_comments_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_assignfeedback_editpdf_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_assignfeedback_file_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_assignfeedback_offline_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_assignsubmission_comments_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_assignsubmission_file_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_assignsubmission_onlinetext_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_accessibilitychecker_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_accessibilityhelper_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_align_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_backcolor_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_bold_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_charmap_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_clear_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_collapse_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_emojipicker_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_emoticon_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_equation_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_fontcolor_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_h5p_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_html_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_image_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_indent_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_italic_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_link_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_managefiles_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_media_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_noautolink_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_orderedlist_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_recordrtc_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_rtl_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_strike_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_subscript_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_superscript_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_table_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_title_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_underline_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_undo_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_atto_unorderedlist_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_cas_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_db_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_email_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_ldap_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_lti_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_manual_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_mnet_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_nologin_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_none_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_oauth2_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_shibboleth_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_auth_webservice_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_availability_completion_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_availability_date_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_availability_grade_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_availability_group_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_availability_grouping_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_availability_profile_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_accessreview_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_activity_modules_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_activity_results_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_admin_bookmarks_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_badges_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_blog_menu_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_blog_recent_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_blog_tags_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_calendar_month_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_calendar_upcoming_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_comments_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_completionstatus_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_course_list_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_course_summary_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_feedback_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_globalsearch_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_glossary_random_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_html_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_login_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_lp_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_mentees_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_mnet_hosts_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_myoverview_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_myprofile_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_navigation_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_news_items_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_online_users_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_private_files_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_recent_activity_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_recentlyaccessedcourses_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_recentlyaccesseditems_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_rss_client_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_search_forums_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_section_links_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_selfcompletion_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_settings_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_site_main_menu_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_social_activities_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_starredcourses_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_tag_flickr_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_tag_youtube_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_tags_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_block_timeline_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_cachestore_apcu_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_cachestore_redis_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_calendartype_gregorian_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_communication_customlink_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_communication_matrix_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_contenttype_h5p_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_access_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_admin_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_adminpresets_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_antivirus_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_auth_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_backup_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_badges_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_blog_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_cache_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_calendar_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_communication_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_completion_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_contentbank_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_course_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_customfield_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_debug_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_editor_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_enrol_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_files_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_form_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_grades_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_h5p_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_install_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_langconfig_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_license_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_media_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_message_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_notes_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_payment_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_pix_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_plugin_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_portfolio_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_question_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_reportbuilder_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_repository_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_role_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_search_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_tag_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_timezones_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_core_webservice_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_customfield_checkbox_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_customfield_date_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_customfield_number_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_customfield_select_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_customfield_text_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_customfield_textarea_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_dataformat_csv_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_dataformat_excel_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_dataformat_html_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_dataformat_json_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_dataformat_ods_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_dataformat_pdf_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_editor_atto_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_editor_textarea_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_editor_tiny_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_category_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_cohort_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_database_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_fee_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_flatfile_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_guest_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_imsenterprise_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_ldap_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_lti_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_manual_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_meta_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_mnet_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_paypal_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_enrol_self_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_admin_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_auth_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_capability_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_cohort_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_email_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_grace_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_iprange_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_nosetup_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_role_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_sms_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_token_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_totp_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_factor_webauthn_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_fileconverter_googledrive_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_fileconverter_unoconv_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_activitynames_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_algebra_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_codehighlighter_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_data_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_displayh5p_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_emailprotect_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_emoticon_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_glossary_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_mathjaxloader_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_mediaplugin_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_multilang_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_tex_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_filter_urltolink_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_format_singleactivity_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_format_social_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_format_topics_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_format_weeks_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_local_adminer_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_logstore_database_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_logstore_standard_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_media_html5audio_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_media_html5video_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_media_videojs_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_media_vimeo_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_media_youtube_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_message_airnotifier_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_message_email_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_message_popup_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mlbackend_php_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mlbackend_python_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_assign_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_bigbluebuttonbn_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_book_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_chat_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_choice_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_data_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_feedback_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_folder_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_forum_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_glossary_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_h5pactivity_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_imscp_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_label_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_lesson_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_lti_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_page_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_quiz_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_resource_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_scorm_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_subsection_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_survey_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_url_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_wiki_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_mod_workshop_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_paygw_paypal_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_bulkmove_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_columnsortorder_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_comment_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_customfields_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_deletequestion_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_editquestion_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_exportquestions_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_exporttoxml_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_history_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_importquestions_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_managecategories_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_previewquestion_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_statistics_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_tagquestion_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_usage_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_viewcreator_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_viewquestionname_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_viewquestiontext_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qbank_viewquestiontype_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_calculated_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_calculatedmulti_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_calculatedsimple_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_ddimageortext_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_ddmarker_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_ddwtos_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_description_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_essay_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_gapselect_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_match_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_missingtype_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_multianswer_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_multichoice_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_numerical_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_ordering_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_random_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_randomsamatch_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_shortanswer_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_qtype_truefalse_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_quiz_statistics_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_quizaccess_seb_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_configlog_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_courseoverview_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_eventlist_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_infectedfiles_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_insights_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_loglive_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_performance_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_questioninstances_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_security_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_stats_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_status_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_report_themeusage_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_areafiles_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_contentbank_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_coursefiles_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_dropbox_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_equella_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_filesystem_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_flickr_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_flickr_public_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_googledocs_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_local_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_merlot_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_nextcloud_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_onedrive_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_recent_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_s3_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_upload_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_url_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_user_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_webdav_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_wikimedia_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_repository_youtube_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_theme_boost_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_accessibilitychecker_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_autosave_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_equation_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_h5p_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_html_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_link_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_media_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_noautolink_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_premium_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tiny_recordrtc_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_admin_presets_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_analytics_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_availabilityconditions_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_behat_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_brickfield_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_capability_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_cohortroles_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_componentlibrary_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_customlang_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_dataprivacy_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_dbtransfer_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_filetypes_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_generator_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_httpsreplace_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_installaddon_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_langimport_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_licensemanager_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_log_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_lp_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_lpimportcsv_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_lpmigrate_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_messageinbound_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_mfa_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_mobile_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_monitor_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_moodlenet_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_multilangupgrade_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_oauth2_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_phpunit_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_policy_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_profiling_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_recyclebin_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_replace_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_spamcleaner_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_task_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_templatelibrary_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_unsuproles_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_uploadcourse_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_uploaduser_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_usertours_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_tool_xmldb_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_webservice_rest_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_string/en_-cache/en_webservice_soap_1727194403-81828814ec6619747bb73bc7cccbd19f.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_yuimodules/eff-cache/eff45b92a82080d34749c363d5facbd81cefae41.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/core_yuimodules/eff-cache/eff45b92a82080d34749c363d5facbd81cefae41.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/cachestore_file/default_application/filelocks/83/83cbf03f58744e7801d3219beee841ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/cache/core_component.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/cache/core_component.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/di/CompiledContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/localcache/di/CompiledContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/0462e46a6a12741f50d3529132f10eb60c2b86b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/05203454972822b4d89eb4d985016795651e9f03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/0c57bc281304585f35891a6e8a206cfa8ff1f44d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/0e85f15907edbeec1db6122c1651614cc4bfc42d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/108ec9d54b3e98e6c701e738bba3ffa3392b9f47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/11e23c7ec38a351ddf31cbb64a1673523459874f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/13cd54b74578f4571c4e39c250a9ea432ab91c7a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/13ee150358c177a6f84167087322c0b4a4c12c3f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/142ceda7ea5d46557be427ab1051e63619719eed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/15e67fed93a1f480782212a35d990588f7b04494" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/1764c49021ed0e4a3fa2f9cb58814419fd2a3fe9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/180168a44111c7f23ef6852e1bdcaafd324d9387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/1ab9e660ba298720f86d62542a7c37d72c6cfc4b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/1bd962d3a3f3f4bb04783a03b901d1a7bf182d80" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/1d4bc59aba9bce5b4cfcd1232dca5e6189847026" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/1df83eec63d4f492f035243dfbe56c4e6ef015fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/1e512fc2fe3ddf9205695184fed3d3f853ddcfb9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/1f562181d3e550f4e1368a3cb05ccc36c93e3e35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/201a4973078af10811d2cfaf9ec4340db5401153" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/2461bfb7a67914eaf5b036b144a6d48de1d1672c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/25123d94c0bd59321bf3155961e18d89027bf3cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/2621676244d39f983bd8510f9b7a2cec8cbb346a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/26393785732f593e98d5b6cd378b18f71171bbc7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/292d21b84b2156ae8117aaa932aab3729bf4890d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/295ee7aced89ce6e04d1d129ce03cc2d74aab9fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/29a30ddb8bfd0f319ea0968ada5e56b6479392a8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/2cfca71a6884c4c2cd63d401168e2fbb0fd4c50b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/2d7ce71e8d4d71752e57b486f3a8fd31cd4f1fe2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/3041b937373f57f456cda81f286e92c0201e2cf2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/3533b9adba602c7b27afdc0d11f40ac53fa31138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/35c24368e2d71ac9fede0e8e1e311a676f24edda" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/3613d59c07e93f9b6b40d8b2627d275e66e5b993" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/3649404f7680f9e6bbc449330130e95de93a2cab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/3816a5df10777c8a30536f8459799ddfefc040c7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/3854ec5b57a1f445152bcb774901c9e0ac8a32a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/387b5681ae0e99bd1e1bfa8873fd29c03cf5555a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/38e6aedee79592d1445b2c82361acdc40cd0cec8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/39aeac57b8d516e7b89894121f3c89a74288608c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/3aa650600505d03398fd59dc48f3b029d965fae8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/3b66b3dfa6e5aac3270dad4708704063bb610ac5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/428d65e9c91310f4afd7bc88674b08aee48af0f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/44f8c69a0152191151dbcc8f66e573e50015a385" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/45e9893a06e920853de6306c7a10f9fefbfb31e6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/46bb224dbcd85a240d5d8203be86c2f20c3182f4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/4859e5614e7b866050a06c6f515941d77fbebd13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/4a011812bd82d33c0c0b3b35687c8d9ca8358840" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/4b8a1035573fda873ab763fa23de782f8e78d155" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/4ddaaf02ff1f72fd642db7bfd9ebc2c2bfc4bfba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/4e7890a03a08f320f42b50097e67413c321a5b0c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/4ea5d3e234b3cdc0edb2dc6a4ff5e074fcf05e08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/4eb6a450bb3e3a4dad078d4de6c7b8f71fa58fa2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/50d248a9cc703c9e3c53e3c3933a0757422968cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/50f883027f0919f12c5cbb4796ccb0316380d5d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/51b561174aab36b4f71d3c52eedc4dc95f40ce8b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/538a64235ab37ff31a847963171798b4ffc54757" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/55f293d24a2d7f3ef5c61070b44841fb3b30d36b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/562f19feae4e3330b0ab1a60bf86384b91783ee1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/56a19e20e31ac150603ca8327872a52b90a22c8b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/5833bea7b8b0186fbfd1b70a0ed1c18b1c480e00" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/5aa1f7ee3e724496af0897084cac65e8bed1c844" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/5bdb37668ae16d50b824a56910541aeb9ccb3bfb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/5bfd760fdc69cb5b296a338c94f5be198f70eee0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/5d9e840f3e08edaeb726a18f8dd4cb3e96085c24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/5fd073950b782810a7873033dec0b8918b25b53d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/5fe7e996a00bb04206887eeb3e05c85c21dc9a9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/6060857b1ac6e7f7c4af7adafe7e2f7a9fdb99fd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/6585c6d6c6ab9a8537f67132516d095fb7daac4b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/6659034f590fdd9d86b71844561092e0a4411c92" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/68bc12ea78a76bc5bf9e0087f0920b92d051b653" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/692745e0e6f05082cb9b44d4aaeeb4b404ee48a8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/6ba967d62881703f504e2438e40ba011521acf5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/6c0f83c24775411f831b77fbfc6923559aec9d61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/701ac0d1329ad11f12feb97bbf44f8ff5994672a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/702ddcd4f9c476d0dc72b466cef695aaa2b5dde4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/722baafca64000239b45f1912197b6dd4446ff33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/725d9ffeb9eea4cd6e84b9865dc45fc506571de0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/73145a0661cf8ad38acf6ffef7d21260ef7aae9c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/73741248c4aca17897f3cc7673aa939c0fc62403" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/73be598e0984a5559d2b168199b4338e4c9f0b60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/75698ef38ddf50a0b92879e347b33733afe74e51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7632d2b139108f58cccd2d2acb34af55638d61ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7736aef8a83b206af0c66c96a70bf4430a13d844" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/784b4880ce64c1ef938f3b48165297d7f731287c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/792687c19e5898dcff47f06cc99dbe0797357098" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7a0dd94037609d66b8ab989f1cc7680173f10f6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7a1dc0a2ac48685a95e2c778635e5c96fe5dae21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7a9ce33c183095f39b111762fb83900226b2e939" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7afbcb1247b4944c925c7c7e5e610b037bba941e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7b4bdbbade29c587feb7911d613cc4ab6360cbde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7b8bf57269dd556e3e11ed9486018a517f102e01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7bbd21720c78cbc7e11e0a66c0243058ba28a1bc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7e09cc41b4e93949343dc52fe2358487d9cd45b6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/7ef837b30a244f414aa9c6766dfc7ca9c0011653" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/80abed461a193f99bb38c2a8a588ecdd179323bc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/821789d841287088fd2c42d7c977abc052d7356b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/850957d558828e9d1e83ecd298bc6cb00721374a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/85195f02b314f16bc8cb84bbd134401f15c75591" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/86e17fdbef9447568b4717365bcc834bca1a4800" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/86e2b588a0ae7278f7769bd0e0fa578aba878745" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/892f08cf705eda8ab5974aff0ab5361be223ce33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/8c0ab4038cddee795cf6ca602b93373d933f5782" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/8d253651d85acf058538603b8508cc6d250e8fec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/8f0f861fc71e00deb535749693e73ffdf1c68458" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/8ff4a154fc87840afcda3ea0dc17f9ffb17bafc7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/9094a23dc0b2888263541c23685c3ff9566f72b2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/90cf4a4565c0501c23a1d852c4861994e9e497ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/94600fa547c71f9f8ae8556269a074c388950c03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/95ae60c758115454c8e3875098a1709afce68b0a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/9659186b5b0524aea5264c7e5e092f5a81f64a09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/9997b27707264963865cd700989e628dc7350f2f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/9a468073fccc6f56434d7e253050f14bb0b1c39b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/9b0c5c407572ff7535a31a9226a4ff3b946540e4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a0ce8cc2fb5c6c97969fba258effd034daf40e69" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a1917963754d24835a43a1f5ba4017c5816749ea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a377b7c1fbbaf3025d85a73fd649e5a1923f6892" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a3965e330c180cc708d792e4bdc1405921d42ac4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a41cd1bfaa5269ec27a5d0881c21861086ca9f47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a64790de0e7235994e015b053052e1d7aeb54507" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a6866f83e068e9346b28b7c8d65f3bbe1d78e3b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a7e89e8bdd80f6b584cf0288647c5b7abca1d994" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/a91c9f9f37a64aa200f88425c0d0e66014c0a440" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b1d8037158bdd2e6bd86a1c0a3f84508c64c1891" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b2577a1007bf04c4a9d16efdbdd6e0869534d59f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b3752b6a50173d25e45eacb8fd05d8c7cd290b54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b4636ec7a423c3c5ee18512d744bf33c455a01c5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b48faff455d5a2072bbd78f768dcbd5260fa5b8b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b712d95d57728ff11991182fe9725bafd37cfa8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b72d71cbd061339c0c253b3dd235c920b54fba41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b8ab897989f5966c8fbbb428aba2040a5b88a1ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/b8c0fd75a04f5a08e16e757c5e55dfcf9fc79d8c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/ba6faa30c3ec3980a92079d5db13bcc37c0122e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/ba7e1a39a4b39d27eeacc5bfa81c5c15804dc52c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/bb8d36f48a59161e93c32632f78da68eb522e88b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/bd8e8529371866d9a9f228b28f9421605c966acc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/beb81470981d3536315119c78c643be686f4f499" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/bf3c82f427d1f3869cc9797818c853f402d1a53b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/c368cbc552ab896b218c4b8482be420bb033c1d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/c50a4ce21140077a0091fb378f72020acd90083b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/c6532667375d0fdbb67da11be2ec1b20d8256835" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/c76395d7697177147edc5d92fd47db6a0b2012ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/c9aa58d388a01a27cf5993279ff1011bb3e7e228" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/c9ad606ae601b4e2e69353fb30246b261102ac02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/cdb5896458554851b4171769d7d47e09e8a50fc1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/d0338bb046fa5d0663fbc0af21e161d19498bcef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/d077bc91bcdf402c7f289a33612f9d5d1b3abd8c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/d12f1c0ec3828ad589bc06e6bb450454f1451998" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/d2915ff0696f420e4db86c857f1a0487385f7f2b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/d2b5f8f1aaf598762b95105dd864c34a85a3139b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/d891101d2b31b49b1a3a988a46dc3978833f2547" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/da4381f89289344d895b3ca615872bdf55b7db83" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/dacda2c7250d80abae367d7fc16ad3ca0bc940b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/db72eb2c5bca47428a4520b887972ca4b219bd38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/de4647bbeeb824b4cb883733f22ab73e616f46c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/de72280fda1874a60f600cc2424dff47a2797d1f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/e269871e6eb54ec06677ca7ec12e7cd941daeb61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/e4232a98db291b7f742b3d31ae0f043866c6e183" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/e883a795aefa6c8bf171e670f82f804b2984cda7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/eaecbd73b199343ec835fcbbc06356c398fcef50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/ec628dcf774dfa702f3b9a3290b29263629ec70c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/ecee484f3c976e20ef4b02e038adb7a498f2b0aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/ed448e478a6c6e51fc2c44bf1c514acda8ca3e4d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/eea9b452e88a95f150935620b4af8ee05c07b07a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/eef4191fb224d570a84830d51eafd47f5aba6589" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/ef0fb2b9627b61c420b2e884dec2aae32d4bc255" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/efaba0356ae4be649bd7d34faa8c5c04a4d1722f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/f0707de3e682eeebf4400dfaa4ef8d0b6ad6f525" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/f0f3749669e018fa47b44e820b50fcc280420050" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/f2cb9cdd364df0e69212fb8365038dc3c53da44a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/f495a4f8ee1a4188358f653b57e5240d00d5d03e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/js/fc4fa0eb5d725264f3c0d229a9469e9c3c3c7ca0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_087f563a2c7283b8a82f1a17ece1900e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_098beded05d59dc7c076ac8e6fa809fc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_0cc7fdecd477cc53c6048acc12af5f92.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_11aad18ff492bd095b72c31f41ff5274.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_13d9591c8a130902f7f95bf5973766da.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_18eccdcd016b3d04f7d43529676f5b79.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_1a777db5c761632479f5777ca7d43050.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_1c5570201367cc6b96ed2631ee1e94a1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_1cf3270df8da3ac01921c1ac0a5facb4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_239610947321b3ffbe63dfef385ecfd7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_25ee7771ade03045948aeb93fa252e72.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_3287cd32ab0499b6e5875da8e6bc5c84.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_374236dbc51dcc7294b53e0b0565cbae.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_3748816e7fd620c4a35e494cb0b3d1da.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_38ca0822b7e1b11a88140d6743853a85.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_3b2016021fedcafe504ebb0cbe1b1bb7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_4ee22ca8beb104aff606c7e6f47de4b0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_51583e1de62a75f2a5d8f9e91cb98dd9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_5a10e150d5ce9e407a86b70479124d69.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_5bc7ff51e357c438f86ec5efaf208a28.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_6048cf49c12289e107e653a0cd8a5242.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_666615368c2689d43dfcbb9dbf9a6504.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_6a61f870f5f9d9a739390f14bfac72ce.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_6af63bae0b1bf3244e7deee24d15e8a9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_6f521851325c1a08dd847fe0f013bef9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_71af592aa250e750b7e6c22ee6d67c38.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_725ec3763afb0623d4e707d838393235.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_788adec45a6b1a283638cc1ceb72ad05.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_7dcaf77d297514700606da324047e572.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_7e03322259e0551435e10ab81a401ba9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_7e3c0dcc84bdd8d1fa07d5a4b747bc79.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_7f22a0557830ec84d8de270f534b2ee1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_86e64d3c7007f5a8a5a86b9646bab75c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_87a0d292930da7efd9b20d2aae00869d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_8d05eb17766ff0001b76ee1a1542e8ce.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_8ff10208621d8a3f783c4015458eb318.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_93d268f273e0a7b4c724e592b73a4cd2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_95c688278f05dbf06ffea86b8a0f7096.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_960b123136c7b5e303bbc79162c21d94.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_9b159dec241734d0ea6dc3c1150d26cc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_9c5710954ff9b6f63ad87f0b1ae4195c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_a180aa4b0908abef9c998d1501c11fc6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_a625d3874507ee14fc89fdf243841099.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_ae60507541ac7c08641e7fbc8fc3efba.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_ae70bc1c4a41ed50d3f44b855f70335c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_b4ac7ba36beca2f7702abe9aaffc58a6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_ba162fd27cfc8a2b636ccf7b3ae125ef.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_c9bcec7b2baca5fb5acf4b93f2e69fdb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_cc6880c995ce1892f53c69feb5b6448e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_d2bdb1ec8e9fae4ed9dfb1536bf9e0b1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_d440fd782b9a042f406199efb15554d9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_d50d1157dcfc722926392292c95e2b92.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_dd3fd82f2fb33b9e10fe27cac44b4e9d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_e07bb9b7b80df0d70f68c54a7a81f88f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_e4a4a8e12fa2f4c58b555215926355b6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_eb5ae5c9974d2d5f1f39818669333416.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_ebb5c0c8512d43b8d91c482baa6c657b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_eddb13b6c2e33821211cd9e109d141db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_f124cbe308babac5f4cf4f55026f3632.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_f15f648d6505d04749fff08fee1c87bd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_f35942d6e3a190b3babbfb63ee4f489d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_f384b71a170957a2657250253a15031c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_f3e2548387780a19ed19a364ce4f64fc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_fa9902b108379daa8dfa8f3a0b66d146.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_fcf08d7d3c4cc3250b5b26bf8fb2438a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_fda0169a5ff5abae037cdc36a3ebe348.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_fe229bc9622619bbf70e202691b7973a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/mustache/1727256915/boost/__Mustache_ff44fa61133bb63f982be1b8f1f169d6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/05088a66901a9c5f701cb14a5faca31593450dfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/05c37386b553be4b7c9e6953e7d1512c6dae7913" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/0f8631d1981b80fdcb7a5d9d8f4f9683c856b13d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/12696a05dc661f3f897588e68eb891a891637f41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/13a7dbfddde418e7344631a9487c5fdbc42eedfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/22165f157b5ed2b0979e61a6effa3e7ce630c438" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/23050f1af49a55e5b80f02198a2ec1d97faa3edc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/2977dd32dc9a21a33b4cd3bb992cc5cee245de6a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/2d141b88f2a40e59d000c512f34bf6cb9e8bf5e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/3db49844780eb3c03130531f30e5435c25c9d749" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/47286fcbb5bcde34900dae35274e8924b4321453" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/49e349398419d522d06c7b00c36142ef7bef77d8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/4aa2696bc6640b3d6158e8ca76dd8a2a98580a17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/571c91e4696a8a5de195344fa7914867bdddbb46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/5ab98d27a6aa6785d291d15895c837aa153e2254" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/6930150a061c84dbe3d8634ae99e91bf7567b374" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/7617ca7c69c930cd801a7f04307cec3369596dd3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/7a84afe087ec9538fc06f53048d100f9601bd189" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/7e9e30010357faf26bc350fa6449dac499a159a5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/7ff6e130d5af54f8ab38ffcf702ff2a121d83a9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/85bb87af59c3d445e5a9f44566ba4a4e1d6c1516" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/9675e519dfa2a223d78ed6a4baf6b61d13357c28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/a3b7b24a160371ec9bb117bbf4999fbbd0ffced4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/a66e227af6ecc1ad9d3d8c9e6a3622d6bf701f1f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/a6af8e67c180328dd9da76a2b538d762c548ef86" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/b4e9259b99612f49888abb2379fcb970c44fcef9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/cf2d2e0c4a52d9d399628e8993fc878ba829ea87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/d0d47f17066c23e4c00f9db674b945b0007ba33a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/d42e2356907eb8002694301fefc922c42a8c60ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/d4593484728e453d64ce00ff8d0f43ce2f115eff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/e541f3b734668b4b3fb921bf1b34334ebded268c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/e97276e334fd344544639fe0e1a61946adedf42a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/f3ca61a67323f605545a9978df96e8bff0853c8d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/requirejs/f6b7766b4dc92950bd8823d8a95c7c5dd13c3215" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/theme/1727256915/boost/css/all_1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/theme/1727256915/boost/fonts/core/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/localcache/theme/1727256915/boost/pix/theme/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/muc/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/muc/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/moodledata/temp/theme/boost/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/moodledata/temp/theme/boost/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mysql/data/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/server/mysql/data/aria_log.00000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mysql/data/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/server/mysql/data/aria_log_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mysql/data/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/server/mysql/data/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mysql/data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/server/mysql/data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mysql/data/mysql_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/server/mysql/data/mysql_error.log" afterDir="false" />
+    </list>
+    <list id="4e3c037a-71a5-497b-9fa6-45eb62ea7500" name="Changes by shadi" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +732,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.3.11\php.exe" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.2.23\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -29,23 +745,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "shadicarl",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.stylelint": "C:\\P5\\server\\moodle\\node_modules\\stylelint",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Carl S H Hejlesen\\AppData\\Local\\Programs\\PhpStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "ts.external.directory.path": "C:\\Users\\carlhejlesen\\AppData\\Local\\Programs\\PhpStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PS-242.21829.154" />
-        <option value="bundled-php-predefined-a98d8de5180a-4d9f4c849d09-com.jetbrains.php.sharedIndexes-PS-242.21829.154" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.22855.113" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.22855.113" />
       </set>
     </attachedChunks>
   </component>
@@ -60,10 +779,16 @@
       <workItem from="1727177363125" duration="66000" />
       <workItem from="1727177450166" duration="14338000" />
       <workItem from="1727252282419" duration="153000" />
+      <workItem from="1727339962280" duration="7000" />
+      <workItem from="1727339970344" duration="7789000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

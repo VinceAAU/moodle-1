@@ -24,6 +24,12 @@ http://localhost/admin/purgecaches.php   <--- Er link til at purge din cashe
 
 Støre ændringer fx ændringer i php eller db, kræver at du åbner og lukker serveren
 
+## Code conduct formatering
+Til variabler skal de være med småt og med underscore mellem or. 
+new_button_for_main_page
+https://moodledev.io/general/development/policies/codingstyle
+
+
 ## db
 
 Når man skal lave et table skal du lave en install.php.  Her skal du deklerere dit table som kan blive set i install.php filen, for at lave et nyt table. Det er ikke så komplext

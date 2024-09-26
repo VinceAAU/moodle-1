@@ -1,3 +1,4 @@
+
 define(['jquery'], function ($) {
     return {
         init: function () {
@@ -96,18 +97,27 @@ define(['jquery'], function ($) {
                             }
 
                             let add_answer_button = create_answer_button(answers_div);
-
+                            let page = document.getElementById("page-local-livequiz-quizcreator");
 
                             function save_question() {
-                                let cr
+                                let save_question_button = create_element("save_question_button",
+                                    'button', "save_button", "Save question");
+
                                 save_question_button.addEventListener('click', () => {
-
+                                    let question_for_main_page = create_element("question_for_main_page",
+                                       'button', 'question_for_main_page', question_input.value);
+                                    console.log(question_input.value.trim().length)
+                                    if (question_input.value.trim() === "") {
+                                        console.log("Could not save if no question is added.")
+                                    } else {
+                                        page.appendChild(question_for_main_page);
+                                        modal_div.remove();
+                                    }
                                 })
-                            }
-                            let save_question_button = document.createElement('button');
-                            save_question_button.className = "save_button";
-                            save_question_button.textContent = "Save question";
 
+                                return save_question_button
+                            }
+                            let save_question_button = save_question();
 
 
                             modal_div.appendChild(question_input);
@@ -125,7 +135,7 @@ define(['jquery'], function ($) {
                             let discard_button = create_discard_button();
                             modal_div.appendChild(discard_button);
 
-                            document.body.appendChild(modal_div);
+                            page.appendChild(modal_div);
                         });
                     }
                 }
@@ -175,7 +185,6 @@ define(['jquery'], function ($) {
                     file_picker_button.addEventListener('click', () => {
                         file_input.click();
                     });
-
                     return file_picker_button;
                 }
 

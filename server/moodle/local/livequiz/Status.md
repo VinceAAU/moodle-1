@@ -17,6 +17,7 @@
 - [ ] different colored awnsers boxes
 - [x] Limit number of awnsers to 8
 - [x] Delete awnser button
+- [] åben "gemt" spørgsmål
 - [ ] Skal kunne tage alt data og forme det til et object et samlet sted.
   for at gøre det nemt at arbejde videre på.
 - 

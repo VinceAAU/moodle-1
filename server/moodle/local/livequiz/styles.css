@@ -19,7 +19,7 @@
 
 }
 
-.answer_div {
+.all_answers_for_question_div {
     max-height: 50%;
     max-width: 60%;
     width: 60%;
@@ -31,7 +31,7 @@
 }
 
 
-.newAnswerDiv {
+.container_for_new_answer {
     width: 40%;
     height: 15%;
     max-height: 15%;
@@ -39,7 +39,7 @@
 
 }
 
-.newQuestionInput {
+.question_input {
     background: white;
     width: 20%;
     height: 10%;
@@ -50,7 +50,7 @@
     text-align: center;
 }
 
-.discardButton {
+.discard_question_button {
     position: absolute; /* Absolute positioning relative to the nearest positioned ancestor */
     bottom: 0; /* Align to the bottom of the container */
     left: 0; /* Align to the left of the container */
@@ -61,7 +61,7 @@
     font-size: larger;
 }
 
-.toast_cancel_modal_div {
+.toast_promise_deletion_div {
     width: 40%;
     height: 40%;
     color: black;

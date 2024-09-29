@@ -27,6 +27,7 @@
     $quiznode->add('Create quiz', new moodle_url('/local/livequiz/quizcreator.php'));
     $quiznode->add('Play quiz', new moodle_url('/local/livequiz/quizrunner.php'));
     $quiznode->add('View quiz', new moodle_url('/local/livequiz/quizcontrol.php'));
+    $quiznode->add('View quiz stats', new moodle_url('/local/livequiz/quizstats.php'));
 }
 
 

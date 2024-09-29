@@ -14,7 +14,9 @@
 - [x] Discard knap
   -  [x] Skal have en pop up som siger "Er du sikker"
 - [ ] Show image after uploadedet
-- [ ] different colored awnsers boxes
+
+!-Not something that should happen during creation, but instead when the quiz is run, otherwise we also need to save the color of a button.
+- [-] different colored awnsers boxes
 - [x] Limit number of awnsers to 8
 - [x] Delete awnser button
 - [] åben "gemt" spørgsmål
@@ -22,12 +24,12 @@
   for at gøre det nemt at arbejde videre på.
 - 
 ### Make questions
-- [ ] Quiz navn boks
+- [x] Quiz navn boks
 - [x] Upload billede 
 - [ ] Vis billede på side
-- [ ] Description boks
-- [ ] Make questions button
-- [ ] Delete question
+- [x] Description boks
+- [x] Make questions button
+- [x] Delete question
 - [ ] When cliking on question, question opens up
 - [ ] Making the questions numerate
 - 

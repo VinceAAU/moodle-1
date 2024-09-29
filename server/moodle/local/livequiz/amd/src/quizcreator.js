@@ -84,13 +84,25 @@ define(['jquery'], function ($) {
     function create_file_picker() {
         let file_picker_input = create_element("file_input", "input", "file_picker_input", "");
         file_picker_input.type = 'file';
+        file_picker_input.accept = ['image/*', 'video/*'];
+
+        const image = document.createElement("img");
+        // const video = document.createElement("video");
 
         file_picker_input.addEventListener('change', () => {
             const file = file_picker_input.files[0];
-            console.log('Selected file:', file);
+            console.log('Selected file:', file.name);
+            image.src = URL.createObjectURL(file);
+            // video.src = URL.createObjectURL(file);
+
         });
 
-        return file_picker_input;
+        let file_container = document.createElement("div");
+        file_container.appendChild(file_picker_input);
+        // file_container.appendChild(video);
+        file_container.appendChild(image);
+
+        return file_container;
     }
 
     function create_element(element_name, type, class_name, content) {
@@ -135,12 +147,16 @@ define(['jquery'], function ($) {
             let question_for_main_page = create_element("question_for_main_page",
                 'button', 'question_for_main_page', question_input.value);
 
-
-            //Der skal gøres så spørgsmålet ikke kan gemmes medmindre svaret er udfyldt
-
             let answers_count = answers_div.children.length;
-            if (question_input.value.trim() === "" || answers_count < 2) {
-                console.log("Could not save if no question is added.")
+            let answers_is_filled = true;
+            for (let i = 0; i < answers_count; i++) {
+                if(answers_div.children[i].querySelector(".answer_input").value.trim() === "") {
+                    answers_is_filled = false;
+                    break;
+                }
+            }
+            if (question_input.value.trim() === "" || answers_count < 2 || !answers_is_filled) {
+                console.log("Could not save if no question is added or not all answers are filled.")
             } else {
                 page.appendChild(question_for_main_page);
                 modal_div.remove();
@@ -182,7 +198,6 @@ define(['jquery'], function ($) {
                 });
             }
         });
-        console.log(answer_count);
         return add_new_answer_to_question;
     }
 });

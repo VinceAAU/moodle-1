@@ -13,5 +13,5 @@ echo $OUTPUT->header();
 <h2>Please Wait!</h2>
 
 <?php
-echo $_POST["submit"];
+echo $_POST["answer"];
 echo $OUTPUT->footer();

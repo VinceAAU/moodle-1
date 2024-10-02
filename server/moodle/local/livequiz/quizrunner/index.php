@@ -35,7 +35,7 @@ class multichoice_answer implements answer {
 		$output = '<form action="quizrunner/wait.php" method="POST" class="answer multichoice">';
 
 		foreach ($this->choices as $choice){
-			$output .= "<button type='submit' name='submit' value='$choice->value'>$choice->display</button>";
+			$output .= "<button type='submit' name='answer' value='$choice->value'>$choice->display</button>";
 		}
 
 		$output .= '</form>';
@@ -44,7 +44,25 @@ class multichoice_answer implements answer {
 	}
 }
 
+class slider_answer implements answer {
+	private $min;
+	private $max;
 
+	public function __construct(int $min, int $max){
+		$this->min = $min;
+		$this->max = $max;
+	}
+
+	public function html() : string {
+		return "
+			<form action='quizrunner/wait.php' method='POST' class='answer slider'>
+				<output>24</output><br>
+				<input type='range' name='answer' min='$this->min' max='$this->max' oninput='this.previousElementSibling.previousElementSibling.value = this.value'>
+				<button type='submit' name='submit''>Submit</button>
+			</form>
+		";
+	}
+}
 
 class question {
 	public string $image;
@@ -71,12 +89,13 @@ class question {
 $question = new question();
 $question->image = 'fish.png';
 $question->prompt = 'Is fish fishing????';
-$question->answer = new multichoice_answer(
+/* $question->answer = new multichoice_answer(
 	array(
 		new multichoice_answer_possibility("Yes!!!!", "yes"),
 		new multichoice_answer_possibility("No!!!!!", "no")
 	)
-);
+); */
+$question->answer = new slider_answer(0, 10);
 
 $question->display();
 

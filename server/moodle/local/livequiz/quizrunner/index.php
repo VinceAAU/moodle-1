@@ -32,13 +32,13 @@ class multichoice_answer implements answer {
 	}
 
 	public function html() : string { 
-		$output = '<div class="answer multichoice">';
+		$output = '<form action="quizrunner/wait.php" method="POST" class="answer multichoice">';
 
 		foreach ($this->choices as $choice){
 			$output .= "<button type='submit' name='submit' value='$choice->value'>$choice->display</button>";
 		}
 
-		$output .= '</div>';
+		$output .= '</form>';
 
 		return $output;
 	}
@@ -79,7 +79,6 @@ $question->answer = new multichoice_answer(
 );
 
 $question->display();
-
 
 // Din indholdskode her (HTML eller noget andet indhold).
 echo $OUTPUT->footer();

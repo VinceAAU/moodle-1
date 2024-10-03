@@ -30,6 +30,7 @@ require_once('../../../config.php');
 
 require_once('question.php');
 require_once('answer/slider.php');
+require_once('answer/multichoice.php');
 
 
 $PAGE->set_url(new moodle_url('/local/livequiz/quizrunner'));

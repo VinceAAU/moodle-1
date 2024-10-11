@@ -18,9 +18,12 @@ pkgs.mkShell {
     wget
     procps
     lsof
+    php82Packages.composer
   ];
 
   shellHook = ''
+    export PHPRC=`realpath server/php/php.ini`
+
     # Function to check and kill existing processes
     kill_existing() {
       local process=$1

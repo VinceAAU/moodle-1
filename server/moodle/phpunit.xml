@@ -2,4 +2,4 @@
   <testsuite name="test suite">
     <directory>moodle-1/server/moodledata/phpunit</directory>
   </testsuite>
-<testsuites>
+</testsuites>

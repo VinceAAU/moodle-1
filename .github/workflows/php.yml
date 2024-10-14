@@ -1,85 +1,33 @@
-name: PHP Composer with MariaDB
+#Defines the name of the workflow that will show in the github action
+name: PHP Composer
 
+#The event that will trigger the workflow, in this case it will be on push and pull request to main and staging
 on:
   pull_request:
     branches: [ "main", "staging" ]
 
+#The jobs that will run on this workflow
 jobs:
+#The name of the given job
   build-test:
+  #Operating system enviroment the job will run on
     runs-on: ubuntu-latest
+    #What the job should do
     steps:
-      - uses: actions/checkout@v4
-
+    #Checks out the code form the repository such that the workflow can acces it
+      # - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       - uses: cachix/install-nix-action@v27
         with:
           nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix-build
 
       # Install MariaDB
       - name: Install MariaDB
         run: |
           sudo apt-get update
           sudo apt-get install -y mariadb-server mariadb-client
-
-      # Start MariaDB and adjust configuration
-      - name: Configure MariaDB
-        run: |
-          sudo service mysql start
           
-          # Update my.ini configuration (replace the following with valid config settings)
-          sudo tee /etc/mysql/mariadb.conf.d/50-server.cnf <<EOF
-          [mysqld]
-          datadir=/var/lib/mysql
-          port=3306
-          innodb_buffer_pool_size=8182M
-          skip-networking=0
-          skip-bind-address
-          EOF
-          
-          # Restart MariaDB to apply new configuration
-          sudo service mysql restart
-
-      - name: Run Moodle Setup and Tests
-        run: |
-          set -x
-          
-          REPO_ROOT=$(pwd)
-
-          # Modify the php.ini file
-          sed -i \
-            -e 's/;extension=gd/extension=gd/' \
-            -e 's/;extension=intl/extension=intl/' \
-            -e 's/;extension=sodium/extension=sodium/' \
-            -e 's/;extension=zip/extension=zip/' \
-            -e "s|curl\.cainfo.*|curl.cainfo=\"$REPO_ROOT/cacert.pem\"|" \
-            -e "s|openssl\.cafile.*|openssl.cafile=\"$REPO_ROOT\"/server/apache/bin/curl-ca-bundle.crt|" \
-            "$REPO_ROOT"/server/php/php.ini
-
-          # Download the cacert.pem file
-          curl https://curl.se/ca/cacert.pem >"$REPO_ROOT/cacert.pem"
-
-          # Run the rest of the Moodle installation and PHPUnit setup
-          nix-shell --run "REPO_ROOT=$REPO_ROOT sh -c ' \
-            cd $REPO_ROOT/server/moodle && \
-            composer require --dev phpunit/phpunit && \
-            mkdir -p $REPO_ROOT/server/moodledata/phpunit && \
-            php admin/cli/install.php \
-              --lang=en \
-              --wwwroot=http://localhost:8000/ \
-              --dataroot=$REPO_ROOT/server/moodledata \
-              --dbpass=root \
-              --dbport=3306 \
-              --dbsocket=/tmp/mysqld.sock \
-              --skip-database \
-              --non-interactive \
-              --agree-license \
-              --allow-unstable \
-              --fullname='Moodle testing thing' \
-              --shortname='mtt' \
-              --adminpass='hunter2' && \
-            echo '\$CFG->phpunit_prefix = \"phpu_\";' >> $REPO_ROOT/server/moodle/config.php && \
-            echo '\$CFG->phpunit_dataroot = \"$(realpath $REPO_ROOT/server/moodledata/phpunit)\";' >> $REPO_ROOT/server/moodle/config.php && \
-            php admin/tool/phpunit/cli/init.php --configuration $REPO_ROOT/server/moodle/phpunit.xml && \
-            ./vendor/bin/phpunit'"
-
-      - name: "Tests finished"
-        run: echo "Tests finished."
+      - name: Run bash script
+      #Runs this command to execute the test cases.
+        run: sh .github/workflows/install_script.sh

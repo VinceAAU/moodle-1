@@ -21,6 +21,30 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
       - run: nix-build
+
+      # Install MariaDB
+      - name: Install MariaDB
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mariadb-server mariadb-client
+
+      # Start MariaDB and adjust configuration
+      - name: Configure MariaDB
+        run: |
+          sudo service mysql start
+          
+          # Update my.ini configuration (replace the following with valid config settings)
+          sudo tee /etc/mysql/mariadb.conf.d/50-server.cnf <<EOF
+          [mysqld]
+          datadir=/var/lib/mysql
+          port=3306
+          innodb_buffer_pool_size=8182M
+          skip-networking=0
+          skip-bind-address
+          EOF
+          
+          # Restart MariaDB to apply new configuration
+          sudo service mysql restart
           
       - name: Run bash script
       #Runs this command to execute the test cases.

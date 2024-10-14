@@ -1,8 +1,6 @@
 #!/bin/sh
 set -x
 
-apt install nix-bin
-
 REPO_ROOT="`pwd`"
 PART_2_SCRIPT="$(realpath $(dirname "$0"))/install_script_part_2.sh"
 

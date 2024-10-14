@@ -1,0 +1,22 @@
+#Defines the name of the workflow that will show in the github action
+name: PHP Composer
+
+#The event that will trigger the workflow, in this case it will be on push and pull request to main and staging
+on:
+  pull_request:
+    branches: [ "main", "staging" ]
+
+#The jobs that will run on this workflow
+jobs:
+#The name of the given job
+  build-test:
+  #Operating system enviroment the job will run on
+    runs-on: ubuntu-latest
+    #What the job should do
+    steps:
+    #Checks out the code form the repository such that the workflow can acces it
+      - uses: actions/checkout@v3
+          
+      - name: Run bash script
+      #Runs this command to execute the test cases.
+        run: /github/workflow/phpunit.bash --configuration phpunit.xml

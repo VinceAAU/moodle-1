@@ -19,4 +19,4 @@ jobs:
           
       - name: Run bash script
       #Runs this command to execute the test cases.
-        run: /github/workflow/phpunit.bash --configuration phpunit.xml
+        run: /.github/workflows/install_script.sh

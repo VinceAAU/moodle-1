@@ -25,6 +25,6 @@ echo "\$CFG->phpunit_prefix = 'phpu_';" >>"$REPO_ROOT"/server/moodle/config.php
 # case some klaphat decides to modify line 3)
 echo "\$CFG->phpunit_dataroot = '$(realpath "$REPO_ROOT"/server/moodledata/phpunit)';">>"$REPO_ROOT"/server/moodle/config.php
 
-php admin/tool/phpunit/cli/init.php
+php admin/tool/phpunit/cli/init.php --configuration "$REPO_ROOT"/server/moodle/phpunit.xml
 
 ./vendor/bin/phpunit

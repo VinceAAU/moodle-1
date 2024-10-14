@@ -16,7 +16,7 @@ jobs:
     steps:
     #Checks out the code form the repository such that the workflow can acces it
       # - uses: actions/checkout@v3
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - uses: cachix/install-nix-action@v27
         with:
           nix_path: nixpkgs=channel:nixos-unstable

@@ -19,4 +19,4 @@ jobs:
           
       - name: Run bash script
       #Runs this command to execute the test cases.
-        run: /.github/workflows/install_script.sh
+        run: /home/runner/work/moodle-1-test-php/moodle-1-test-php/.github/workflows/install_script.sh

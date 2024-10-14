@@ -1,7 +1,9 @@
 #!/bin/sh
 set -x
 
-REPO_ROOT="`realpath "moodle-1-test-php/"`"
+apt install nix-bin
+
+REPO_ROOT="`pwd`"
 PART_2_SCRIPT="$(realpath $(dirname "$0"))/install_script_part_2.sh"
 
 sed -i \

@@ -22,11 +22,22 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - run: nix-build
 
-      # Install MariaDB
+      # Install MariaDB and set up the environment
       - name: Install MariaDB
         run: |
           sudo apt-get update
-          sudo apt-get install -y mariadb-server mariadb-client
+          sudo apt-get install -y mariadb-server
+          sudo service mysql start
+
+      # Configure MariaDB
+      - name: Setup MariaDB
+        run: |
+          sudo mysql -e "CREATE DATABASE moodle;"
+          sudo mysql -e "CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';"
+          sudo mysql -e "GRANT ALL PRIVILEGES ON moodle.* TO 'root'@'localhost';"
+          sudo mysql -e "FLUSH PRIVILEGES;"
+          sudo mysql -u root -proot moodle < $GITHUB_WORKSPACE/MoodleSQL.sql
+
 
       - name: Stop any existing MySQL/MariaDB
         run: |

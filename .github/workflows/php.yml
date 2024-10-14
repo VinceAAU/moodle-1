@@ -27,6 +27,12 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y mariadb-server mariadb-client
+
+      - name: Stop any existing MySQL/MariaDB
+        run: |
+          sudo service mysql stop || true
+          sudo service mariadb stop || true
+
           
       - name: Run bash script
       #Runs this command to execute the test cases.

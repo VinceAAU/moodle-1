@@ -55,7 +55,7 @@ pkgs.mkShell {
 
     # Initialize MariaDB if not already done
     if [ ! -d "${mariadb_data_dir}/mysql" ]; then
-      mysql_install_db --datadir=${mariadb_data_dir}
+      sudo mysql_install_db --datadir=${mariadb_data_dir}
       # Start MariaDB temporarily to set up the database
       mysqld --datadir=${mariadb_data_dir} --socket=${mariadb_socket} --skip-grant-tables &
       TEMP_MYSQL_PID=$!

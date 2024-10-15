@@ -23,6 +23,7 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
+    set -x
     export LANG="en_AU.UTF-8" #Why does it need to be Australian? Nobody knows...
     export LC_ALL="en_AU.UTF-8"
     export PHPRC=`realpath server/php/php.ini`

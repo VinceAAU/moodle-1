@@ -15,5 +15,13 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - run: nix-build
 
+      - uses: YakkaDev/mariadb-actions@v1.1.0
+        with:
+          version: '10.6.15'
+          character: 'utf8mb4'
+          database: 'moodle'
+          user: 'root'
+          password: 'root'
+
       - name: Run bash script
         run: sh .github/workflows/install_script.sh

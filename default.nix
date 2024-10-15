@@ -50,6 +50,7 @@ pkgs.mkShell {
 
     # Ensure MariaDB data directory exists
     mkdir -p ${mariadb_data_dir}
+    ls -l
 
     # Initialize MariaDB if not already done
     if [ ! -d "${mariadb_data_dir}/mysql" ]; then

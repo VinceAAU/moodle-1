@@ -18,9 +18,15 @@ pkgs.mkShell {
     wget
     procps
     lsof
+    php82Packages.composer
+    glibcLocales
   ];
 
   shellHook = ''
+    export LANG="en_AU.UTF-8" #Why does it need to be Australian? Nobody knows...
+    export LC_ALL="en_AU.UTF-8"
+    export PHPRC=`realpath server/php/php.ini`
+
     # Function to check and kill existing processes
     kill_existing() {
       local process=$1

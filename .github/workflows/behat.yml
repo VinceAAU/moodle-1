@@ -267,18 +267,23 @@ jobs:
           
           echo "\$CFG->phpunit_prefix = 'phpu_';" >>"$REPO_ROOT/server/moodle/config.php"
           echo "\$CFG->phpunit_dataroot = '$(realpath "$REPO_ROOT/server/moodledata/phpunit")';">>"$REPO_ROOT/server/moodle/config.php"
+
+
+          echo "\$CFG->behat_dataroot = $CFG->dataroot . '/behat';" >>"$REPO_ROOT/server/moodle/config.php"
+          echo "\$CFG->behat_wwwroot = 'http://127.0.0.1:8000';")';">>"$REPO_ROOT/server/moodle/config.php"
+          echo "\$CFG->behat_prefix = 'beh_';")';">>"$REPO_ROOT/server/moodle/config.php"
           
-          php admin/tool/phpunit/cli/init.php
+
+
+
+          php admin/tool/behat/cli/init.php
 
       - name: Run tests
         run: |
           cd server/moodle
-          for file in `find mod/livequiz/tests/phpunit -type f`
-          do
-            echo Running tests in $file
-            vendor/bin/phpunit $file
-          done
-              
+          vendor/bin/behat --config ../moodledata/behat/behatrun/behat/behat.yml --tags=@mod_livequiz
+
+
 
       
 

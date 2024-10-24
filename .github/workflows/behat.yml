@@ -10,6 +10,13 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
 
+    services:
+      selenium:
+        image: selenium/standalone:latest
+        #ports: 
+        #  - 4444:4444
+        #options: --shm-size="2g"
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -175,7 +182,14 @@ jobs:
           echo " Database: ${moodle_db_name}"
           echo "Press Ctrl+C to stop the services and exit."
 
-      - name: Install and initialise phpunit
+      - name: Set up geckodriver
+        uses: browser-actions/setup-geckodriver@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+        run: geckodriver --version
+
+
+      - name: Initialise moodle, to create config.php
         run: |
           echo en_AU.UTF-8 UTF-8 | sudo tee -a /etc/locale.gen
           sudo locale-gen
@@ -186,8 +200,8 @@ jobs:
           export LANG="en_AU.UTF-8"
           export LC_ALL="en_AU.UTF-8"
           export PHPRC=`realpath /etc/php/8.3/cli/php.ini`
-          # server/php/php.ini`
-          # composer require --dev phpunit/phpunit
+
+          
           REPO_ROOT="`pwd`"
           cd "$REPO_ROOT"/server/moodle
           php admin/cli/install.php \
@@ -204,17 +218,31 @@ jobs:
               --fullname="Moodle testing thing" \
               --shortname="mtt" \
               --adminpass="hunter2"
-          echo "\$CFG->phpunit_prefix = 'phpu_';" >>"$REPO_ROOT/server/moodle/config.php"
-          echo "\$CFG->phpunit_dataroot = '$(realpath "$REPO_ROOT/server/moodledata/phpunit")';">>"$REPO_ROOT/server/moodle/config.php"
-          php admin/tool/phpunit/cli/init.php
-      - name: Run tests
+
+      - name: Download moodle-browser-config
+        run: |
+          export MBCPATH=`realpath .`/moodle-browser-config
+          git clone https://github.com/andrewnicols/moodle-browser-config $MBCPATH
+
+          #Inserts require_once('$MBCPATH/init.php') before the other require_once, as specified in the document
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i require_once('$MBCPATH/init.php')" server/moodle/config.php
+        
+      - name: Install & Init Behat
+        run: | 
+          cfg=server/moodle/config.php
+
+          echo '$CFG->behat_dataroot = $CFG->dataroot . \'/behat\';' >>$cfg
+          echo '$CFG->behat_wwwroot = \'http://127.0.0.1:8000\';' >>$cfg
+          echo '$CFG->behat_prefix = \'beh_\';' >>$cfg
+
+          cd server/moodle/config.php
+          php admin/tool/behat/cli/init.php
+
+
+      - name: Run tests in Firefox
         run: |
           cd server/moodle
-          for file in `find mod/livequiz/tests/phpunit -type f`
-          do
-            echo Running tests in $file
-            ./vendor/bin/phpunit $file
-          done
+          vendor/bin/behat --config ../moodledata/behat/behatrun/behat.yml --profile=firefox
               
 
       

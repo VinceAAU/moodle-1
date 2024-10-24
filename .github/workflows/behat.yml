@@ -208,7 +208,7 @@ jobs:
           cd "$REPO_ROOT"/server/moodle
           php admin/cli/install.php \
               --lang=en \
-              --wwwroot="http://localhost:8000/" \
+              --wwwroot="http://127.0.0.1:8000/" \
               --dataroot="$REPO_ROOT/server/moodledata" \
               --dbpass=root \
               --dbport=3306 \
@@ -268,7 +268,6 @@ jobs:
       - name: Run tests in Firefox
         run: |
           cd server/moodle
-          php admin/tool/behat/cli/util.php --enable
           vendor/bin/behat --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
               
 

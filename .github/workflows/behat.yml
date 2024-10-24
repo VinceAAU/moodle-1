@@ -242,7 +242,7 @@ jobs:
       - name: Run tests in Firefox
         run: |
           cd server/moodle
-          vendor/bin/behat --config ../moodledata/behat/behatrun/behat/behat.yml --profile=firefox
+          vendor/bin/behat --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=firefox
               
 
       

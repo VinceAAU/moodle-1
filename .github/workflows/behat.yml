@@ -20,7 +20,7 @@ jobs:
           sudo systemctl disable mariadb
           sudo systemctl stop mariadb
         
-      - name: install fireofx
+      - name: install Firefox
         run: sudo apt install firefox
 
       - name: Setup PHP
@@ -201,7 +201,7 @@ jobs:
           cd "$REPO_ROOT"/server/moodle
           php admin/cli/install.php \
               --lang=en \
-              --wwwroot="http://127.0.0.1:8000/" \
+              --wwwroot="http://localhost:8000/" \
               --dataroot="$REPO_ROOT/server/moodledata" \
               --dbpass=root \
               --dbport=3306 \

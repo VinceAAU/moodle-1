@@ -154,7 +154,7 @@ jobs:
           # Start PHP built-in server for Moodle
           start_php_server() {
             echo "Starting PHP built-in server for Moodle..."
-            php -S 0.0.0.0:8000 -t ./server/moodle -c ./etc/php/8.3/cli/php.ini &
+            php -S 0.0.0.0:8000 -t ./server/moodle &
             PHP_SERVER_PID=$!
           }
 

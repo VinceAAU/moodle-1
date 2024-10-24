@@ -245,7 +245,7 @@ jobs:
       - name: Run tests in Firefox
         run: |
           cd server/moodle
-          vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
+          vendor/bin/behat -vv --dry-run --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
               
 
       

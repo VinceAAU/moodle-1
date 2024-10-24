@@ -38,7 +38,7 @@ jobs:
           tools: composer
 
 
-      - name: Set up the database and start mariadb
+      - name: Set up the database and start pretty much everything
         run: |
           set -x
           mariadb_data_dir="./mariadb_data"
@@ -172,7 +172,7 @@ jobs:
             rm -f ${mariadb_socket}
           }
           
-          # Start services
+          # Start services`
           start_mariadb
           start_php_server
 
@@ -240,6 +240,10 @@ jobs:
           cat config.php
 
           php admin/tool/behat/cli/init.php
+
+          kill_existing "php"
+          start_php_server
+
 
 
       - name: Run tests in Firefox

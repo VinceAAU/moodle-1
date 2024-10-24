@@ -228,13 +228,12 @@ jobs:
         
       - name: Install & Init Behat
         run: | 
-          export cfg="server/moodle/config.php"
-
-          echo '$CFG->behat_dataroot = $CFG->dataroot . \'/behat\';' >>$cfg
-          echo '$CFG->behat_wwwroot = \'http://127.0.0.1:8000\';' >>$cfg
-          echo '$CFG->behat_prefix = \'beh_\';' >>$cfg
-
-          cd server/moodle/config.php
+          cd server/moodle
+          
+          echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
+          echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
+          echo '$CFG->behat_prefix = "beh_";' >>config.php
+          
           php admin/tool/behat/cli/init.php
 
 

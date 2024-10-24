@@ -224,7 +224,7 @@ jobs:
           git clone https://github.com/andrewnicols/moodle-browser-config $MBCPATH
 
           #Inserts require_once('$MBCPATH/init.php') before the other require_once, as specified in the document
-          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i require_once('$MBCPATH/init.php')" server/moodle/config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i require_once('$MBCPATH/init.php');" server/moodle/config.php
         
       - name: Install & Init Behat
         run: | 

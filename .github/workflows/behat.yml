@@ -240,6 +240,25 @@ jobs:
           cat config.php
 
           php admin/tool/behat/cli/init.php
+          
+          
+          
+          # Function to check and kill existing processes
+          kill_existing() {
+            local process=$1
+            if pgrep -x "$process" > /dev/null; then
+              echo "Killing existing $process process..."
+              sudo pkill -x "$process"
+              sleep 2
+            fi
+          }
+
+          # Start PHP built-in server for Moodle
+          start_php_server() {
+            echo "Starting PHP built-in server for Moodle..."
+            php -S 0.0.0.0:8000 -t ./server/moodle -c ./etc/php/8.3/cli/php.ini &
+            PHP_SERVER_PID=$!
+          }
 
           kill_existing "php"
           start_php_server

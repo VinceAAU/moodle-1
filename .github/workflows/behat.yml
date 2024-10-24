@@ -234,6 +234,8 @@ jobs:
           echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
           
+          cat config.php
+
           php admin/tool/behat/cli/init.php
 
 

@@ -160,7 +160,17 @@ EOF
       done
       echo "MariaDB is up continuing.";
     }
-
+    import_db(){
+      if [ -f "${moodle_sql_file}" ]; then
+        mysql -uroot -p${root_password} -S${mariadb_socket} ${moodle_db_name} < ${moodle_sql_file} && {
+          echo "SQL file imported successfully."
+        } || {
+          echo "Error: Failed to import SQL file."
+        }
+      else
+        echo "Warning: ${moodle_sql_file} not found. Database created but not populated."
+      fi
+    }
     # Start Adminer
     start_adminer() {
       echo "Starting Adminer on port ${toString adminer_port}..."

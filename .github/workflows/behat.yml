@@ -242,11 +242,8 @@ jobs:
           composer install
 
           php admin/tool/behat/cli/init.php
-          
 
-      - name: Run tests in Firefox
-        run: |
-          set -x
+          
           echo $PATH
           which geckodriver
           ps -aux

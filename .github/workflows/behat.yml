@@ -214,7 +214,7 @@ jobs:
               --shortname="mtt" \
               --adminpass="hunter2"
               
-          echo hi:(
+          echo 'hi:('
           ss -nltp
 
       - name: Set up selenium.

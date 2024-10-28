@@ -237,6 +237,15 @@ jobs:
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
           echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
+
+          pidof php
+          sudo pkill php
+          pidof php
+          sleep 10
+          pidof php
+          php -S 0.0.0.0:8000 -t `pwd` &
+          PHP_SERVER_PID=$!
+          pidof php
           
           cat config.php
 

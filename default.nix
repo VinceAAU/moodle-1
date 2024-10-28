@@ -130,7 +130,7 @@ EOF
         exit 1
       }
       if [ -f "${moodle_sql_file}" ]; then
-        mysql -uroot -p${root_password} -S${mariadb_socket} ${moodle_db_name} < ${moodle_sql_file} && {
+        mysql -uroot -p${root_password} -S${mariadb_socket} ${moodle_db_name} -e "source ${moodle_sql_file}" && {
           echo "SQL file imported successfully."
         } || {
           echo "Error: Failed to import SQL file."
@@ -162,7 +162,7 @@ EOF
     }
     import_db(){
       if [ -f "${moodle_sql_file}" ]; then
-        mysql -uroot -p${root_password} -S${mariadb_socket} ${moodle_db_name} < ${moodle_sql_file} && {
+        mysql -uroot -p${root_password} -S${mariadb_socket} ${moodle_db_name} -e "source ${moodle_sql_file}" && {
           echo "SQL file imported successfully."
         } || {
           echo "Error: Failed to import SQL file."

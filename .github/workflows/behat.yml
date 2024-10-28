@@ -244,7 +244,7 @@ jobs:
           pidof php || echo No php found
           sleep 10
           pidof php || echo No php found
-          php -S 0.0.0.0:8000 -t `pwd` &
+          php -S 127.0.0.1:8000 -t `pwd` &
           PHP_SERVER_PID=$!
           pidof php || echo No php found
           sleep 10

@@ -246,6 +246,9 @@ jobs:
 
       - name: Run tests in Firefox
         run: |
+          set -x
+          echo $PATH
+          which geckodriver
           ps -aux
           cd server/moodle
           vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox

@@ -235,19 +235,19 @@ jobs:
           cd server/moodle
           
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
-          #echo '$CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";' >>config.php
+          echo '$CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";' >>config.php
           echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
 
-          pidof php || echo No php found
-          sudo pkill php
-          pidof php || echo No php found
-          sleep 10
-          pidof php || echo No php found
-          php -S 127.0.0.1:8000 -t `pwd` &
-          PHP_SERVER_PID=$!
-          pidof php || echo No php found
-          sleep 10
+          #pidof php || echo No php found
+          #sudo pkill php
+          #pidof php || echo No php found
+          #sleep 10
+          #pidof php || echo No php found
+          #php -S 127.0.0.1:8000 -t `pwd` &
+          #PHP_SERVER_PID=$!
+          #pidof php || echo No php found
+          #sleep 10
           
           cat config.php
 
@@ -258,6 +258,8 @@ jobs:
           
           echo $PATH
           which geckodriver
+          ss
+          sleep 10
           
           vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               

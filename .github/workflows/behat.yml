@@ -238,14 +238,14 @@ jobs:
           echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
 
-          pidof php
+          pidof php || true
           sudo pkill php
-          pidof php
+          pidof php || true
           sleep 10
-          pidof php
+          pidof php || true
           php -S 0.0.0.0:8000 -t `pwd` &
           PHP_SERVER_PID=$!
-          pidof php
+          pidof php || true
           
           cat config.php
 

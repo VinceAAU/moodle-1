@@ -231,6 +231,7 @@ jobs:
         
       - name: Install & Init Behat
         run: | 
+          set -x
           cd server/moodle
           
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
@@ -246,7 +247,8 @@ jobs:
           
           echo $PATH
           which geckodriver
-          vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
+          
+          vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               
 
       

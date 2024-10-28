@@ -240,7 +240,7 @@ jobs:
           
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
           echo '$CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";' >>config.php
-          echo '$CFG->behat_wwwroot = "http://localhost:8000";' >>config.php
+          echo '$CFG->behat_wwwroot = "http://0.0.0.0:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
 
           #pidof php || echo No php found

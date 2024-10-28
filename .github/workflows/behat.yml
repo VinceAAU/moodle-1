@@ -213,6 +213,9 @@ jobs:
               --fullname="Moodle testing thing" \
               --shortname="mtt" \
               --adminpass="hunter2"
+              
+          echo hi:(
+          ss -nltp
 
       - name: Set up selenium.
         run: |
@@ -232,6 +235,7 @@ jobs:
       - name: Install & Init Behat
         run: | 
           set -x
+          ss -nltp
           cd server/moodle
           
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
@@ -258,7 +262,7 @@ jobs:
           
           echo $PATH
           which geckodriver
-          ss
+          ss -nltp
           sleep 10
           
           vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`

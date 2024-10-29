@@ -20,8 +20,8 @@ jobs:
           sudo systemctl disable mariadb
           sudo systemctl stop mariadb
         
-      - name: install Firefox
-        run: sudo apt install firefox
+#      - name: install Firefox
+#        run: sudo apt install firefox
 
       - name: Setup PHP
         id: setup-php
@@ -263,7 +263,6 @@ jobs:
           echo $PATH
           which geckodriver
           ss -nltp
-          sleep 10
           
           vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               

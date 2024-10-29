@@ -16,6 +16,7 @@ jobs:
         
       - name: install mariadb
         run: | 
+          sudo cat /etc/hosts
           sudo apt install mariadb-server
           sudo systemctl disable mariadb
           sudo systemctl stop mariadb

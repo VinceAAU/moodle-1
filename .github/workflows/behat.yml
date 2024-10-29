@@ -1,4 +1,4 @@
-MInkname: Behat
+name: Behat
 
 on:
   pull_request:

@@ -264,7 +264,7 @@ jobs:
           which geckodriver
           ss -nltp
           
-          vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
+          sudo vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               
 
       

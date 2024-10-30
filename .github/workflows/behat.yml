@@ -275,7 +275,7 @@ jobs:
 
           curl localhost:8000
           
-          sudo vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
+          sudo vendor/bin/behat -vvv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               
 
       

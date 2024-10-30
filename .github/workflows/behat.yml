@@ -232,8 +232,8 @@ jobs:
       - name: Install & Init Behat
         run: | 
           cd server/moodle
-          if [ ! -d "../moodledata/behat" ]; then
-            mkdir -p "../moodledata/behat"
+          if [ ! -d "server/moodle/behat" ]; then
+            mkdir -p "server/moodle/behat"
           fi
 
           

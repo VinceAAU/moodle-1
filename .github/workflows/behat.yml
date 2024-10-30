@@ -272,6 +272,8 @@ jobs:
           echo $PATH
           which geckodriver
           ss -nltp
+
+          curl localhost:8000
           
           sudo vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               

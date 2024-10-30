@@ -235,7 +235,8 @@ jobs:
           if [ ! -d "server/moodle/behat" ]; then
             mkdir -p "server/moodle/behat"
           fi
-
+          find / -type d -name behat
+          
           
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
           echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
@@ -250,7 +251,12 @@ jobs:
         run: |
           ps -aux
           cd server/moodle
-          vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
+          for file in `find mod/livequiz/tests/behat -type f`
+          do
+            echo Running tests in $file
+            vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox $file
+          done
+          # vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
               
 
       

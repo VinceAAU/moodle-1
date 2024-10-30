@@ -260,7 +260,11 @@ jobs:
 
           php admin/tool/behat/cli/init.php
 
-          
+      - name: Debug info for Carl
+        run: find .
+
+      - name: Run tests
+        run: |
           echo $PATH
           which geckodriver
           ss -nltp

@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [ "main", "staging"  ]
   push:
-    branches: [ "vincetheis-behat" ]
+    branches: [ "manta-behat" ]
 
 jobs:
   build-test:
@@ -269,7 +269,7 @@ jobs:
           which geckodriver
           ss -nltp
           
-          sudo vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
+          sudo server/moodle/vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               
 
       

@@ -1,4 +1,4 @@
-name: Behat
+name: Beha
 
 on:
   pull_request:

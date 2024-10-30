@@ -242,7 +242,7 @@ jobs:
           echo '$CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";' >>config.php
           echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
-          
+          curl http://127.0.0.1:8000
           cat config.php
 
           php admin/tool/behat/cli/init.php --enable
@@ -252,6 +252,7 @@ jobs:
         run: |
           ps -aux
           cd server/moodle
+          curl http://127.0.0.1:8000
           # for file in `find mod/livequiz/tests/behat -type f`
           # do
           #   echo Running tests in $file

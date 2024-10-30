@@ -267,6 +267,8 @@ jobs:
 
       - name: Run tests
         run: |
+          cd server/moodle
+        
           echo $PATH
           which geckodriver
           ss -nltp

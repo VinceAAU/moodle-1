@@ -265,11 +265,12 @@ jobs:
 
       - name: Run tests
         run: |
+          cd server/moodle 
+          
           echo $PATH
           which geckodriver
-          ss -nltp
-          
-          sudo server/moodle/vendor/bin/behat -vv --config `realpath /server/moodledata/behat/behatrun/behat/behat.yml`
+          ss -nltp       
+          sudo vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               
 
       

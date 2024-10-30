@@ -261,7 +261,7 @@ jobs:
           php admin/tool/behat/cli/init.php
 
       - name: Debug info for Carl
-        run: tree .
+        run: tree -f .
 
       - name: Run tests
         run: |

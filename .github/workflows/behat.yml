@@ -156,7 +156,23 @@ jobs:
             echo "Starting PHP built-in server for Moodle..."
             php -S 0.0.0.0:8000 -t `realpath server/moodle` &
             PHP_SERVER_PID=$!
+            # Wait until the server responds or timeout
+            for i in {1..10}; do
+              if curl -s http://localhost:8000 > /dev/null; then
+                echo "PHP server is ready."
+                break
+              else
+                echo "Waiting for PHP server to be ready..."
+                sleep 3
+              fi
+            done
           }
+
+          # start_php_server() {
+          #   echo "Starting PHP built-in server for Moodle..."
+          #   php -S 0.0.0.0:8000 -t `realpath server/moodle` &
+          #   PHP_SERVER_PID=$!
+          # }
 
           # Function to stop services
           stop_services() {
@@ -240,7 +256,7 @@ jobs:
           
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
           echo '$CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";' >>config.php
-          echo '$CFG->behat_wwwroot = "http://0.0.0.0:8000";' >>config.php
+          echo '$CFG->behat_wwwroot = "http://localhost:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
           curl http://127.0.0.1:8000
           cat config.php

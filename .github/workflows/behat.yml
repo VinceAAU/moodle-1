@@ -175,11 +175,11 @@ jobs:
           # }
 
           # Function to stop services
-          stop_services() {
-            echo "Stopping services..."
-            kill $MARIADB_PID  $PHP_SERVER_PID 2>/dev/null
-            rm -f ${mariadb_socket}
-          }
+          # stop_services() {
+          #   echo "Stopping services..."
+          #   kill $MARIADB_PID  $PHP_SERVER_PID 2>/dev/null
+          #   rm -f ${mariadb_socket}
+          # }
           curl http://127.0.0.1:8000
           # Start services`
           start_mariadb
@@ -256,7 +256,7 @@ jobs:
           
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
           echo '$CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";' >>config.php
-          echo '$CFG->behat_wwwroot = "http://localhost:8000";' >>config.php
+          echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
           curl http://127.0.0.1:8000
           cat config.php

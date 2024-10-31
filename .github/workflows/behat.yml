@@ -11,10 +11,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: ✝️✝️ GO AWAY SNAP GO AWAY GO AWAY ✝️✝️
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: install mariadb
+        run: | 
+          sudo cat /etc/hosts
+          sudo apt install mariadb-server
+          sudo systemctl disable mariadb
+          sudo systemctl stop mariadb
+
+      - name: Exorcises Snap from the system
         run: |
+          echo ✝️✝️ GO AWAY SNAP GO AWAY GO AWAY ✝️✝️  # This line is necessary
+        
+          # The snap version of firefox doesn't work with behat, 
+          # so we have to make sure that apt doesn't install it 
+          # via snap.
           sudo apt autoremove --purge snapd
           sudo apt-mark hold snapd
+
+          # Apparently, if we don't do this, Ubuntu will  
+          # automatically reinstall snap without asking us 
+          # when we try to install Firefox
           sudo add-apt-repository ppa:mozillateam/ppa
           echo '
           Package: *
@@ -25,16 +44,8 @@ jobs:
           Pin: version 1:1snap*
           Pin-Priority: -1
           ' | sudo tee /etc/apt/preferences.d/mozilla-firefox
-    
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        
-      - name: install mariadb
-        run: | 
-          sudo cat /etc/hosts
-          sudo apt install mariadb-server
-          sudo systemctl disable mariadb
-          sudo systemctl stop mariadb
+
+          echo ✝️✝️ GO AWAY SNAP GO AWAY GO AWAY ✝️✝️  # This line is also necessary
         
       - name: install Firefox
         run: sudo apt install firefox
@@ -45,7 +56,6 @@ jobs:
         with:
           extensions: phar, iconv, mbstring, gd, intl, sodium, zip
           tools: composer
-
 
       - name: Set up the database and start pretty much everything
         run: |
@@ -199,7 +209,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-
       - name: Initialise moodle, to create config.php
         run: |
           echo en_AU.UTF-8 UTF-8 | sudo tee -a /etc/locale.gen
@@ -251,46 +260,18 @@ jobs:
       - name: Install & Init Behat
         run: | 
           set -x
-          ss -nltp
           cd server/moodle
 
+          # Inserts all those lines before the require_once line mentioned before.
+          # This is necessary because moodle is stupid.
           sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_dataroot = \$CFG->dataroot . '/behat';" config.php
           sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_wwwroot = 'http:\/\/localhost:8000';" config.php
           sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_dataroot_parent = \$CFG->dataroot . '\/behat';" config.php
           sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_prefix = 'beh_';" config.php
 
-          #pidof php || echo No php found
-          #sudo pkill php
-          #pidof php || echo No php found
-          #sleep 10
-          #pidof php || echo No php found
-          #php -S 127.0.0.1:8000 -t `pwd` &
-          #PHP_SERVER_PID=$!
-          #pidof php || echo No php found
-          #sleep 10
-          
-          cat config.php
-
           composer install
 
           php admin/tool/behat/cli/init.php
-
-      - name: See if things exist
-        run: |
-          echo What is the path?
-          echo $PATH
-          
-          echo Is the server running?
-          ss -nltp
-          sleep 2
-          
-          echo Does geckodriver exist?
-          which geckodriver
-          sleep 2
-          
-          echo Is selenium running?
-          ps -aux
-          sleep 2
           
       - name: Run tests
         run: |

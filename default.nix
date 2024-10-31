@@ -59,6 +59,7 @@ pkgs.mkShell {
     php.packages.composer
     # php.packages.php-codesniffer
     glibcLocales
+    unzip
   ];
 
   shellHook = ''

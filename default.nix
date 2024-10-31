@@ -62,9 +62,8 @@ pkgs.mkShell {
     unzip
     selenium-server-standalone
     geckodriver
-    firefox
+    (if stdenv.isDarwin then null else firefox)
   ];
-
   shellHook = ''
     MOODLE_ROOT="$(realpath server/moodle)"
     export LANG="en_AU.UTF-8" #Why does it need to be Australian? Nobody knows...

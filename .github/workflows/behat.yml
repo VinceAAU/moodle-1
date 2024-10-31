@@ -23,11 +23,10 @@ jobs:
 
       - name: Exorcises Snap from the system
         run: |
-          echo ✝️✝️ GO AWAY SNAP GO AWAY GO AWAY ✝️✝️  # This line is necessary
-        
           # The snap version of firefox doesn't work with behat, 
           # so we have to make sure that apt doesn't install it 
           # via snap.
+          echo ✝️✝️ GO AWAY SNAP GO AWAY GO AWAY ✝️✝️  # This line is necessary
           sudo apt autoremove --purge snapd
           sudo apt-mark hold snapd
 

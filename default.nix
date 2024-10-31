@@ -74,7 +74,7 @@ pkgs.mkShell {
       local process=$1
       if pgrep -x "$process" > /dev/null; then
         echo "Killing existing $process process..."
-        pkill -x "$process"
+        pkill -9 -x "$process"
         sleep 2
       fi
     }
@@ -120,15 +120,15 @@ EOF
       echo "Verifying root password..."
       mysql -uroot -p${root_password} -S${mariadb_socket} -e "SELECT 1;" || {
         echo "Error: Root password verification failed."
-        kill $TEMP_MYSQL_PID
-        wait $TEMP_MYSQL_PID
+        kill -9 $TEMP_MYSQL_PID
+        wait -9 $TEMP_MYSQL_PID
         exit 1
       }
 
       mysql -uroot -p${root_password} -S${mariadb_socket} -e "CREATE DATABASE IF NOT EXISTS ${moodle_db_name}" || {
         echo "Error: Failed to create database ${moodle_db_name}."
-        kill $TEMP_MYSQL_PID
-        wait $TEMP_MYSQL_PID
+        kill -9 $TEMP_MYSQL_PID
+        wait -9 $TEMP_MYSQL_PID
         exit 1
       }
       if [ -f "${moodle_sql_file}" ]; then
@@ -141,7 +141,7 @@ EOF
         echo "Warning: ${moodle_sql_file} not found. Database created but not populated."
       fi
 
-      kill $TEMP_MYSQL_PID
+      kill -9 $TEMP_MYSQL_PID
       wait $TEMP_MYSQL_PID
     fi
     else 
@@ -214,7 +214,7 @@ EOF
     # Function to stop services
     stop_services() {
       echo "Stopping services..."
-      kill $MARIADB_PID $ADMINER_PID $PHP_SERVER_PID 2>/dev/null
+      kill -9 $MARIADB_PID $ADMINER_PID $PHP_SERVER_PID 2>/dev/null
       rm -f ${mariadb_socket}
       rm -f ./adminer_router.php
     }

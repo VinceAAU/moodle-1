@@ -260,22 +260,22 @@ jobs:
 
           php admin/tool/behat/cli/init.php
 
-#      - name: See if things exist
-#        run: |
-#          echo What is the path?
-#          echo $PATH
-#          
-#          echo Is the server running?
-#          ss -nltp
-#          sleep 2
-#          
-#          echo Does geckodriver exist?
-#          geckodriver
-#          sleep 2
-#          
-#          echo Is selenium running?
-#          top
-#          sleep 2
+      - name: See if things exist
+        run: |
+          echo What is the path?
+          echo $PATH
+          
+          echo Is the server running?
+          ss -nltp
+          sleep 2
+          
+          echo Does geckodriver exist?
+          which geckodriver
+          sleep 2
+          
+          echo Is selenium running?
+          ps -aux
+          sleep 2
           
       - name: Run tests
         run: |

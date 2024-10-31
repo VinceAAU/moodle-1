@@ -62,6 +62,7 @@ pkgs.mkShell {
     unzip
     selenium-server-standalone
     geckodriver
+    firefox
   ];
 
   shellHook = ''
@@ -209,14 +210,14 @@ EOF
     # Start PHP built-in server for Moodle
     start_php_server() {
       echo "Starting PHP built-in server for Moodle..."
-      php -S 0.0.0.0:8000 -t ./server/moodle &
+      php -S 127.0.0.1:8000 -t ./server/moodle &
       PHP_SERVER_PID=$!
     }
 
     # Function to stop services
     stop_services() {
       echo "Stopping services..."
-      kill -9 $MARIADB_PID $ADMINER_PID $PHP_SERVER_PID 2>/dev/null
+      kill -9 $MARIADB_PID $ADMINER_PID $PHP_SERVER_PID $SELENIUM_PID 2>/dev/null
       rm -f ${mariadb_socket}
       rm -f ./adminer_router.php
     }
@@ -269,6 +270,11 @@ EOF
           echo "adding phpunit to config";
           echo "\$CFG->phpunit_prefix = 'phpu_';" >>"server/moodle/config.php"
           echo "\$CFG->phpunit_dataroot = '$(realpath "server/moodledata/phpunit")';">>"server/moodle/config.php"
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_dataroot = \$CFG->dataroot . '/behat';" server/moodle/config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_wwwroot = 'http:\/\/127.0.0.1:8000';" server/moodle/config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_dataroot_parent = \$CFG->dataroot . '\/behat';" server/moodle/config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_prefix = 'beh_';" server/moodle/config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i require_once('$MOODLE_ROOT/moodle-browser-config/init.php');" server/moodle/config.php
         else 
           echo "phpunit found in config skipping modifying it";
         fi
@@ -307,6 +313,26 @@ EOF
     }
     fixit(){
       phpcbf  $MOODLE_ROOT/mod/livequiz/
+    }
+    beit(){
+      CURRENT_PATH="$(pwd)"
+      cd $MOODLE_ROOT
+      if [ ! -d "$MOODLE_ROOT/moodle-browser-config" ]; then
+        git clone https://github.com/andrewnicols/moodle-browser-config 
+      fi
+      cd ../moodledata
+      BEHAT_PATH="$(pwd)"
+      mkdir behat
+      cd $MOODLE_ROOT
+      php admin/tool/behat/cli/init.php
+      if ! ss -tunlp | grep -q ':4444'; then
+        selenium-server&
+        SELENIUM_PID=$!
+      fi
+      vendor/bin/behat --config $BEHAT_PATH/behat/behatrun/behat/behat.yml --profile=firefox --tags @mod_livequiz
+
+
+      cd $CURRENT_PATH
     }
     # Trap to ensure services are stopped when exiting the shell
     trap stop_services EXIT

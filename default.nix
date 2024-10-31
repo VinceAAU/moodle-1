@@ -63,6 +63,7 @@ pkgs.mkShell {
     selenium-server-standalone
     geckodriver
     git
+    unixtools.netstat
     (if stdenv.isDarwin then null else firefox)
   ];
   shellHook = ''
@@ -325,8 +326,11 @@ EOF
       mkdir behat
       cd $MOODLE_ROOT
       php admin/tool/behat/cli/init.php
-      selenium-server&
-      SELENIUM_PID=$!
+      if ! netstat -tuln | grep -q ':4444'; then
+        selenium-server &
+        SELENIUM_PID=$!
+      fi
+
       vendor/bin/behat --config $BEHAT_PATH/behat/behatrun/behat/behat.yml --profile=firefox --tags @mod_livequiz
 
 

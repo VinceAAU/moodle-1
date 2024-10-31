@@ -89,6 +89,7 @@ pkgs.mkShell {
         sleep 2
       fi
     }
+    if [[ "$OSTYPE" != "darwin"* ]]; then
 
     # Ensure MariaDB data directory exists
     mkdir -p ${mariadb_data_dir}
@@ -142,6 +143,11 @@ EOF
 
       kill $TEMP_MYSQL_PID
       wait $TEMP_MYSQL_PID
+    fi
+    else 
+       if [ ! -d "moodledb_data" ]; then
+       unzip mariadb_data.zip
+       fi
     fi
 
     # Kill existing MariaDB and PHP processes

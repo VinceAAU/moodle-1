@@ -62,6 +62,7 @@ pkgs.mkShell {
     unzip
     selenium-server-standalone
     geckodriver
+    git
     (if stdenv.isDarwin then null else firefox)
   ];
   shellHook = ''

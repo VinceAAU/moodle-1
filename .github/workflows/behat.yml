@@ -21,8 +21,8 @@ jobs:
           sudo systemctl disable mariadb
           sudo systemctl stop mariadb
         
-#      - name: install Firefox
-#        run: sudo apt install firefox
+      - name: install Firefox
+        run: sudo apt install firefox
 
       - name: Setup PHP
         id: setup-php
@@ -281,7 +281,7 @@ jobs:
         run: |
           cd server/moodle
           
-          vendor/bin/behat -vvv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
+          vendor/bin/behat -vvv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
               
 
       

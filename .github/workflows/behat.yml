@@ -156,34 +156,18 @@ jobs:
             echo "Starting PHP built-in server for Moodle..."
             php -S 0.0.0.0:8000 -t `realpath server/moodle` &
             PHP_SERVER_PID=$!
-            # Wait until the server responds or timeout
-            for i in {1..10}; do
-              if curl -s http://localhost:8000 > /dev/null; then
-                echo "PHP server is ready."
-                break
-              else
-                echo "Waiting for PHP server to be ready..."
-                sleep 3
-              fi
-            done
           }
 
-          # start_php_server() {
-          #   echo "Starting PHP built-in server for Moodle..."
-          #   php -S 0.0.0.0:8000 -t `realpath server/moodle` &
-          #   PHP_SERVER_PID=$!
-          # }
-
           # Function to stop services
-          # stop_services() {
-          #   echo "Stopping services..."
-          #   kill $MARIADB_PID  $PHP_SERVER_PID 2>/dev/null
-          #   rm -f ${mariadb_socket}
-          # }
-          curl http://127.0.0.1:8000
+          stop_services() {
+            echo "Stopping services..."
+            kill $MARIADB_PID  $PHP_SERVER_PID 2>/dev/null
+            rm -f ${mariadb_socket}
+          }
           # Start services`
           start_mariadb
           start_php_server
+          curl http://127.0.0.1:8000
 
           echo "MariaDB and PHP server are now running."
           echo "Moodle is available at http://localhost:8000"
@@ -269,11 +253,6 @@ jobs:
           ps -aux
           cd server/moodle
           curl http://127.0.0.1:8000
-          # for file in `find mod/livequiz/tests/behat -type f`
-          # do
-          #   echo Running tests in $file
-          #   vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox $file
-          # done
           vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
               
 

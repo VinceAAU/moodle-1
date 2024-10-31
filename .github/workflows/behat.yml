@@ -180,7 +180,7 @@ jobs:
             kill $MARIADB_PID  $PHP_SERVER_PID 2>/dev/null
             rm -f ${mariadb_socket}
           }
-          
+          curl http://127.0.0.1:8000
           # Start services`
           start_mariadb
           start_php_server

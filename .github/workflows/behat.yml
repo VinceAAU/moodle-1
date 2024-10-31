@@ -281,7 +281,7 @@ jobs:
         run: |
           cd server/moodle
           
-          vendor/bin/behat --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
+          vendor/bin/behat --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox --tags=@mod_livequiz
               
 
       

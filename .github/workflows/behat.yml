@@ -253,7 +253,6 @@ jobs:
         run: |
           ps -aux
           cd server/moodle
-          curl http://127.0.0.1:8000
           vendor/bin/behat -vv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml` --profile=headlessfirefox
               
 

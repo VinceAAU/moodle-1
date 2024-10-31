@@ -8,9 +8,24 @@ on:
 
 jobs:
   build-test:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
 
     steps:
+      - name: ✝️✝️ GO AWAY SNAP GO AWAY GO AWAY ✝️✝️
+        run: |
+          sudo apt autoremove --purge snapd
+          sudo apt-mark hold snapd
+          sudo add-apt-repository ppa:mozillateam/ppa
+          echo '
+          Package: *
+          Pin: release o=LP-PPA-mozillateam
+          Pin-Priority: 1001
+          
+          Package: firefox
+          Pin: version 1:1snap*
+          Pin-Priority: -1
+          ' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+    
       - name: Checkout repository
         uses: actions/checkout@v3
         

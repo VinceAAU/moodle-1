@@ -238,11 +238,11 @@ jobs:
           set -x
           ss -nltp
           cd server/moodle
-          
-          echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
-          echo '$CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";' >>config.php
-          echo '$CFG->behat_wwwroot = "http://localhost:8000";' >>config.php
-          echo '$CFG->behat_prefix = "beh_";' >>config.php
+
+          sed -i '/^require_once(__DIR__ . '\/lib\/setup.php');/i $CFG->behat_dataroot = $CFG->dataroot . "/behat";'
+          sed -i '/^require_once(__DIR__ . '\/lib\/setup.php');/i $CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";'
+          sed -i '/^require_once(__DIR__ . '\/lib\/setup.php');/i $CFG->behat_wwwroot = "http://localhost:8000";'
+          sed -i '/^require_once(__DIR__ . '\/lib\/setup.php');/i $CFG->behat_prefix = "beh_";'
 
           #pidof php || echo No php found
           #sudo pkill php

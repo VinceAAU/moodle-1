@@ -260,20 +260,26 @@ jobs:
 
           php admin/tool/behat/cli/init.php
 
-      #- name: Debug info for Carl
-      #  run: |
-      #    tree -f .
-      #    echo done
-
+      - name: See if things exist
+        run: |
+          echo What is the path?
+          echo $PATH
+          
+          echo Is the server running?
+          ss -nltp
+          sleep 2
+          
+          echo Does geckodriver exist?
+          geckodriver
+          sleep 2
+          
+          echo Is selenium running?
+          top
+          sleep 2
+          
       - name: Run tests
         run: |
           cd server/moodle
-        
-          echo $PATH
-          which geckodriver
-          ss -nltp
-
-          curl localhost:8000
           
           vendor/bin/behat -vvv --config `realpath ../moodledata/behat/behatrun/behat/behat.yml`
               

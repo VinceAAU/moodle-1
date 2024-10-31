@@ -167,7 +167,7 @@ jobs:
           # Start services`
           start_mariadb
           start_php_server
-          curl http://127.0.0.1:8000
+          curl http://0.0.0.0:8000
 
           echo "MariaDB and PHP server are now running."
           echo "Moodle is available at http://localhost:8000"
@@ -201,7 +201,7 @@ jobs:
           cd "$REPO_ROOT"/server/moodle
           php admin/cli/install.php \
               --lang=en \
-              --wwwroot="http://localhost:8000/" \
+              --wwwroot="http://0.0.0.0:8000/" \
               --dataroot="$REPO_ROOT/server/moodledata" \
               --dbpass=root \
               --dbport=3306 \
@@ -240,9 +240,9 @@ jobs:
           
           echo '$CFG->behat_dataroot = $CFG->dataroot . "/behat";' >>config.php
           echo '$CFG->behat_dataroot_parent = $CFG->dataroot . "/behat";' >>config.php
-          echo '$CFG->behat_wwwroot = "http://127.0.0.1:8000";' >>config.php
+          echo '$CFG->behat_wwwroot = "http://0.0.0.0:8000";' >>config.php
           echo '$CFG->behat_prefix = "beh_";' >>config.php
-          curl http://127.0.0.1:8000
+          curl http://0.0.0.0:8000
           cat config.php
 
           php admin/tool/behat/cli/init.php --enable

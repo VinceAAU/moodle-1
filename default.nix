@@ -145,7 +145,7 @@ EOF
       wait $TEMP_MYSQL_PID
     fi
     else 
-       if [ ! -d "moodledb_data" ]; then
+       if [ ! -d "mariadb_data" ]; then
        unzip mariadb_data.zip
        fi
     fi

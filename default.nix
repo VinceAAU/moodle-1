@@ -271,11 +271,6 @@ EOF
           echo "adding phpunit to config";
           echo "\$CFG->phpunit_prefix = 'phpu_';" >>"server/moodle/config.php"
           echo "\$CFG->phpunit_dataroot = '$(realpath "server/moodledata/phpunit")';">>"server/moodle/config.php"
-          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_dataroot = \$CFG->dataroot . '/behat';" server/moodle/config.php
-          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_wwwroot = 'http:\/\/127.0.0.1:8000';" server/moodle/config.php
-          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_dataroot_parent = \$CFG->dataroot . '\/behat';" server/moodle/config.php
-          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_prefix = 'beh_';" server/moodle/config.php
-          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i require_once('$MOODLE_ROOT/moodle-browser-config/init.php');" server/moodle/config.php
         else 
           echo "phpunit found in config skipping modifying it";
         fi
@@ -325,6 +320,15 @@ EOF
       BEHAT_PATH="$(pwd)"
       mkdir behat
       cd $MOODLE_ROOT
+      if ! grep -Fxq "\$CFG->behat_dataroot = \$CFG->dataroot . '/behat';" "config.php"; then
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_dataroot = \$CFG->dataroot . '/behat';" config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_wwwroot = 'http:\/\/127.0.0.1:8000';" config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_dataroot_parent = \$CFG->dataroot . '\/behat';" config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i \$CFG->behat_prefix = 'beh_';" config.php
+          sed -i "/^require_once(__DIR__ . '\/lib\/setup.php');/i require_once('$MOODLE_ROOT/moodle-browser-config/init.php');" config.php
+      else 
+        echo "phpunit found in config skipping modifying it";
+      fi
       php admin/tool/behat/cli/init.php
       if ! netstat -tuln | grep -q ':4444'; then
         selenium-server &

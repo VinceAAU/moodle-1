@@ -123,3 +123,4 @@ server/moodle/npm-shrinkwrap.json
 server/moodle/lib/editor/tiny/plugins/html/build/package.json
 phpcbf.bat
 adminer_router.php
+server/moodle/dataroot

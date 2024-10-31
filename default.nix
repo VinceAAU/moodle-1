@@ -325,10 +325,8 @@ EOF
       mkdir behat
       cd $MOODLE_ROOT
       php admin/tool/behat/cli/init.php
-      if ! ss -tunlp | grep -q ':4444'; then
-        selenium-server&
-        SELENIUM_PID=$!
-      fi
+      selenium-server&
+      SELENIUM_PID=$!
       vendor/bin/behat --config $BEHAT_PATH/behat/behatrun/behat/behat.yml --profile=firefox --tags @mod_livequiz
 
 

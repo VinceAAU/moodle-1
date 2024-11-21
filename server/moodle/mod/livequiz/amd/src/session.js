@@ -26,3 +26,4 @@ export const init = async(quizid, questionid) => {
         });
     });
 };
+

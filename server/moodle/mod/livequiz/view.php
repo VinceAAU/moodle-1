@@ -58,4 +58,4 @@ echo $OUTPUT->header();
 //echo $output->render($renderable);
 echo $OUTPUT->footer();
 echo html_writer::tag('button', 'Open WebSocket Connection', ['id' => 'openconnection','class' => 'btn btn-primary']);
-$PAGE->requires->js_call_amd('mod_livequiz/websocketscript', 'initWebSocket', ['localhost:3000']);
+$PAGE->requires->js_call_amd('mod_livequiz/initWebSocket', 'initWebSocket', ['localhost:3000']);

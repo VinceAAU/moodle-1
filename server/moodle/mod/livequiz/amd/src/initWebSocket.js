@@ -6,7 +6,7 @@ export const initWebSocket = (websocketUrl) => {
 
 
 openConnectionButton.addEventListener("click", function () {
-
+console.log("The butten can get pressed");
  try {
 
  // Create a new WebSocket connection

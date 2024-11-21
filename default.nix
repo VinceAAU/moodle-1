@@ -81,6 +81,12 @@ pkgs.mkShell {
 		npm install
 	)
 
+	# Function to compile frontend stuff
+	compile_frontend()(
+		cd "$MOODLE_ROOT"/mod/livequiz/amd
+		npx grunt
+	)
+
     # Function to check and kill existing processes
     kill_existing() {
       local process=$1
@@ -373,6 +379,7 @@ EOF
       cd $CURRENT_PATH
     }
 	setup_node
+	compile_frontend
 
     # Trap to ensure services are stopped when exiting the shell
     trap stop_services EXIT

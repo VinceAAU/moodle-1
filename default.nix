@@ -378,12 +378,9 @@ EOF
 
       cd $CURRENT_PATH
     }
-<<<<<<< Updated upstream
 	setup_node
 	compile_frontend
 
-=======
->>>>>>> Stashed changes
     # Trap to ensure services are stopped when exiting the shell
     trap stop_services EXIT
 

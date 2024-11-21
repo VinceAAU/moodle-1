@@ -66,6 +66,7 @@ pkgs.mkShell {
     git
     unixtools.netstat
     (if stdenv.isDarwin then null else firefox)
+    nodejs_20
   ];
   shellHook = ''
     MOODLE_ROOT="$(realpath server/moodle)"
@@ -73,6 +74,12 @@ pkgs.mkShell {
     export LC_ALL="en_AU.UTF-8"
     # export PHPRC=`realpath server/php/php.ini`
 
+       # Function to do nodejs stuff
+       setup_node()(
+               # Using brackets instead of parens means that the cd is local to the function
+               cd "$MOODLE_ROOT"
+               npm install
+       )
 
 	# Function to compile frontend stuff
 	compile_frontend()(

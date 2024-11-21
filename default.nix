@@ -66,13 +66,20 @@ pkgs.mkShell {
     git
     unixtools.netstat
     (if stdenv.isDarwin then null else firefox)
+	nodejs_20 #Moodle doesn't support 22 yet
   ];
   shellHook = ''
     MOODLE_ROOT="$(realpath server/moodle)"
     export LANG="en_AU.UTF-8" #Why does it need to be Australian? Nobody knows...
     export LC_ALL="en_AU.UTF-8"
     # export PHPRC=`realpath server/php/php.ini`
-
+	
+	# Function to do nodejs stuff
+	setup_node()(
+		# Using brackets instead of parens means that the cd is local to the function
+		cd "$MOODLE_ROOT"
+		npm install
+	)
 
     # Function to check and kill existing processes
     kill_existing() {
@@ -365,6 +372,8 @@ EOF
 
       cd $CURRENT_PATH
     }
+	setup_node
+
     # Trap to ensure services are stopped when exiting the shell
     trap stop_services EXIT
 

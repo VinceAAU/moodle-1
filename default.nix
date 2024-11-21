@@ -40,6 +40,7 @@ let
     pkgs.php.extensions.sysvsem
     pkgs.php.extensions.xmlreader
     pkgs.php.extensions.zlib
+    pkgs.php.extensions.sockets
   ]);
    extraConfig = "max_input_vars = 5000
 memory_limit = 256M
@@ -241,6 +242,25 @@ EOF
       echo "success installing phpunit"
       cd "$CURRENT_PATH"
     }
+    check_ratchet() {
+      if [ ! -f "$MOODLE_ROOT/vendor/cboden/ratchet" ]; then
+      echo "no ratchet installed installing it now"
+      install_ratchet
+      fi
+      if [ ! -f "$MOODLE_ROOT/vendor/cboden/ratchet" ]; then
+      echo "installing failed exiting"
+      exit 1
+      fi
+      echo "cboden/ratchet found"
+    }
+    install_ratchet() {
+      CURRENT_PATH="$(pwd)"
+      cd "$MOODLE_ROOT"
+      composer require --dev cboden/ratchet
+      echo "success installing cboden/ratchet"
+      cd "$CURRENT_PATH"
+    }
+
     create_config(){
      if [ ! -f "$MOODLE_ROOT/config.php" ]; then
       echo "no config found creating a new one";

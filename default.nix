@@ -347,6 +347,15 @@ EOF
       fi
       phpcs  $MOODLE_ROOT/mod/livequiz/
     }
+    gruntit(){
+      CURRENT_PATH="$(pwd)"
+      cd $MOODLE_ROOT
+      npm install
+      cd mod/livequiz
+      npx grunt stylelint
+      npx grunt js
+      cd $CURRENT_PATH
+    }
     fixit(){
       phpcbf  $MOODLE_ROOT/mod/livequiz/
     }

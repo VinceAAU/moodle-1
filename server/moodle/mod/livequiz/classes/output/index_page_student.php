@@ -17,6 +17,9 @@
 namespace mod_livequiz\output;
 
 use core\exception\moodle_exception;
+use dml_exception;
+use mod_livequiz\models\livequiz;
+use mod_livequiz\services\livequiz_services;
 use renderable;
 use renderer_base;
 use templatable;
@@ -25,12 +28,12 @@ use moodle_url;
 use mod_livequiz\models\student_quiz_relation;
 
 /**
- * Class index_page
+ * Class index_page_student
  * @package mod_livequiz
  * @copyright 2024 Software AAU
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class index_page implements renderable, templatable {
+class index_page_student implements renderable, templatable {
     /** @var int $cmid the course module id */
     protected int $cmid;
     /** @var int $quizid the course module id */
@@ -38,19 +41,25 @@ class index_page implements renderable, templatable {
     /** @var int $studentid the student id */
     protected int $studentid;
     /** @var int $isteacher if user is teacher */
-    protected bool $isteacher;
+    protected bool $isteacher = false;
+
+    /** @var livequiz $livequiz the livequiz instance */
+    private livequiz $livequiz;
 
     /**
      * index_page constructor.
      * @param int $cmid
      * @param int $quizid
      * @param int $studentid
+     * @throws dml_exception
      */
-    public function __construct(int $cmid, int $quizid, int $studentid, bool $isteacher) {
+    public function __construct(int $cmid, int $quizid, int $studentid, bool $isteacher = false) {
         $this->cmid = $cmid;
         $this->quizid = $quizid;
         $this->studentid = $studentid;
         $this->isteacher = $isteacher;
+        $service = livequiz_services::get_singleton_service_instance();
+        $this->livequiz = $service->get_livequiz_instance($quizid);
     }
 
     /**
@@ -62,6 +71,10 @@ class index_page implements renderable, templatable {
      */
     public function export_for_template(renderer_base $output): stdClass {
         $data = new stdClass();
+        $data->pagename = "Quiz menu page";
+        $data->studentid = $this->studentid;
+        $data->hasquestions = !empty($this->livequiz->get_questions());
+        $data->quizid = $this->quizid;
         $data->participations = [];
 
         $participations = student_quiz_relation::get_all_student_participation_for_quiz($this->quizid, $this->studentid);
